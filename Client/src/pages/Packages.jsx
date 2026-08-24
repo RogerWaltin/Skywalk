@@ -5,7 +5,7 @@ import { packageCategories, packages } from "../data/content";
 
 // Package cards driven by data/content.js — categories: Domestic,
 // International, Religious. Pricing shown on request.
-export default function Packages() {
+export default function Packages({ onEnquiry }) {
   const [active, setActive] = useState(packageCategories[0]);
   const visible = packages.filter((pkg) => pkg.category === active);
 
@@ -28,7 +28,7 @@ export default function Packages() {
               role="tab"
               aria-selected={active === category}
               onClick={() => setActive(category)}
-              className={`rounded-full px-6 py-2.5 text-sm font-bold transition-all ${
+              className={`cursor-pointer rounded-full px-6 py-2.5 text-sm font-bold transition-all ${
                 active === category
                   ? "bg-leaf-500 text-white shadow-lg shadow-leaf-500/30"
                   : "border border-white/15 bg-white/5 text-white/70 hover:border-leaf-400/40 hover:text-white"
@@ -66,13 +66,14 @@ export default function Packages() {
                 <p className="mt-2 flex-1 text-sm leading-relaxed text-white/60">{pkg.blurb}</p>
                 <div className="mt-5 flex items-center justify-between border-t border-white/10 pt-4">
                   <span className="text-sm font-bold text-leaf-300">Price on request</span>
-                  <a
-                    href="#contact"
-                    className="inline-flex items-center gap-1.5 text-sm font-bold text-leaf-400 transition-colors hover:text-leaf-300"
+                  <button
+                    type="button"
+                    onClick={onEnquiry}
+                    className="inline-flex cursor-pointer items-center gap-1.5 text-sm font-bold text-leaf-400 transition-colors hover:text-leaf-300"
                   >
                     Enquire
                     <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
-                  </a>
+                  </button>
                 </div>
               </div>
             </article>

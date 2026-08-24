@@ -3,7 +3,7 @@ import { hero } from "../data/content";
 
 const icons = { Plane, MapPinned, Stamp, Ship };
 
-export default function Hero() {
+export default function Hero({ onEnquiry }) {
   return (
     <section id="home" className="relative flex min-h-svh items-center overflow-hidden">
       {/* Background video with poster fallback */}
@@ -44,12 +44,13 @@ export default function Hero() {
               {hero.primaryCta.label}
               <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
             </a>
-            <a
-              href={hero.secondaryCta.href}
-              className="inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/5 px-7 py-3.5 text-sm font-bold text-white backdrop-blur-sm transition-all hover:-translate-y-0.5 hover:bg-white hover:text-navy-900"
+            <button
+              type="button"
+              onClick={onEnquiry}
+              className="cursor-pointer inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/5 px-7 py-3.5 text-sm font-bold text-white backdrop-blur-sm transition-all hover:-translate-y-0.5 hover:bg-white hover:text-navy-900"
             >
               {hero.secondaryCta.label}
-            </a>
+            </button>
           </div>
         </div>
 
