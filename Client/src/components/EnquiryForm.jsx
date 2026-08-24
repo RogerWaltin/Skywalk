@@ -119,19 +119,19 @@ export default function EnquiryForm() {
             ) : (
               <form onSubmit={handleSubmit} className="grid gap-5 sm:grid-cols-2">
                 <Field label="Full Name *">
-                  <input required type="text" name="name" placeholder="e.g. Priya Nair" className={inputClasses} />
+                  <input required type="text" name="name" placeholder="e.g. Priya Nair" className={inputClasses} autoComplete="off"/>
                 </Field>
                 <Field label="Phone *">
-                  <input required type="tel" name="phone" placeholder="+91 00000 00000" className={inputClasses} />
+                  <input required type="tel" name="phone" placeholder="+91 00000 00000" className={inputClasses} autoComplete="off" />
                 </Field>
                 <Field label="Email">
-                  <input type="email" name="email" placeholder="you@example.com" className={inputClasses} />
+                  <input type="email" name="email" placeholder="you@example.com" className={inputClasses} autoComplete="off" />
                 </Field>
                 <Field label="Destination">
-                  <input type="text" name="destination" placeholder="Where would you like to go?" className={inputClasses} />
+                  <input type="text" name="destination" placeholder="Where would you like to go?" className={inputClasses} autoComplete="off" />
                 </Field>
                 <Field label="Travel Date">
-                  <input type="date" name="travelDate" className={inputClasses} />
+                  <input type="date" name="travelDate" className={inputClasses} autoComplete="off" />
                 </Field>
                 <Field label="Number of Travellers">
                   <input
@@ -139,11 +139,11 @@ export default function EnquiryForm() {
                     name="travellers"
                     min="1"
                     placeholder="e.g. 4"
-                    className={inputClasses}
+                    className={inputClasses} autoComplete="off"
                   />
                 </Field>
                 <Field label="Service Required">
-                  <select name="service" defaultValue="" className={inputClasses}>
+                  <select name="service" defaultValue="" className={inputClasses} autoComplete="off">
                     <option value="" disabled>
                       Select a service…
                     </option>
