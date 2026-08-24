@@ -3,7 +3,7 @@ import { Menu, Phone, X } from "lucide-react";
 import Logo from "../components/Logo";
 import { navLinks, site } from "../data/content";
 
-export default function Navbar() {
+export default function Navbar({ onEnquiry }) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -55,12 +55,13 @@ export default function Navbar() {
             <Phone className="size-4 text-leaf-500" />
             {site.phone}
           </a>
-          <a
-            href="#contact"
-            className="rounded-full bg-leaf-600 px-5 py-2.5 text-sm font-bold text-white shadow-lg shadow-leaf-600/25 transition-all hover:-translate-y-0.5 hover:bg-leaf-700"
+          <button
+            type="button"
+            onClick={onEnquiry}
+            className="rounded-full bg-leaf-600 px-5 py-2.5 text-sm font-bold text-white shadow-lg shadow-leaf-600/25 transition-all hover:-translate-y-0.5 hover:bg-leaf-700 cursor-pointer"
           >
             Enquire Now
-          </a>
+          </button>
         </div>
 
         <button
@@ -93,13 +94,16 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-          <a
-            href="#contact"
-            onClick={() => setOpen(false)}
-            className="mt-2 block rounded-xl bg-leaf-600 px-4 py-3 text-center text-base font-bold text-white"
+          <button
+            type="button"
+            onClick={() => {
+              setOpen(false);
+              onEnquiry();
+            }}
+            className="mt-2 block w-full rounded-xl bg-leaf-600 px-4 py-3 text-center text-base font-bold text-white"
           >
             Enquire Now
-          </a>
+          </button>
           <a
             href={site.phoneHref}
             className="flex items-center justify-center gap-2 pt-2 pb-1 text-sm font-semibold text-navy-700"
