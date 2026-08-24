@@ -17,7 +17,8 @@ export default function Hero() {
         playsInline
         aria-hidden="true"
       />
-      <div className="absolute inset-0 bg-linear-to-r from-navy-950/90 via-navy-900/70 to-navy-900/30" />
+      {/* Light at the top so the navbar logo sits on the sky; navy scrim below for text */}
+      {/* <div className="absolute inset-0 bg-linear-to-b from-navy-950/0 via-navy-950/75 via-30% to-navy-950/90" /> */}
 
       <div className="relative mx-auto w-full max-w-7xl px-4 pt-36 pb-40 sm:px-6 lg:px-8">
         <div className="max-w-2xl animate-fade-up">

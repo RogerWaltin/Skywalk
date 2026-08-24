@@ -1,3 +1,4 @@
+import { ToastProvider } from "./components/Toast";
 import Navbar from "./pages/Navbar";
 import Hero from "./pages/Hero";
 import About from "./pages/About";
@@ -13,7 +14,7 @@ import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
   return (
-    <>
+    <ToastProvider>
       <Navbar />
       <main>
         <Hero />
@@ -28,6 +29,6 @@ export default function App() {
       </main>
       <Footer />
       <ScrollToTop />
-    </>
+    </ToastProvider>
   );
 }

@@ -10,6 +10,7 @@ export const site = {
   shortName: "Skywalk",
   tagline: "Your Journey Begins Here...",
   phone: "+91 79940 15501",
+  phoneCopy: "+91 7994015501",
   phoneHref: "tel:+917994015501",
   whatsappHref: "https://wa.me/917994015501",
   email: "skywalktravels92@gmail.com",
@@ -43,10 +44,9 @@ export const hero = {
     { icon: "Stamp", label: "Visa Assistance" },
     { icon: "Ship", label: "Cruise Holidays" },
   ],
-  video:
-    "https://videos.pexels.com/video-files/2169880/2169880-hd_1280_720_30fps.mp4",
+  video: "https://www.pexels.com/download/video/8345629/",
   poster:
-    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80",
+    "https://images.pexels.com/photos/37310545/pexels-photo-37310545.jpeg",
 };
 
 // ---------------------------------------------------------------------------

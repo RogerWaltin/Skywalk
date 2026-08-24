@@ -1,6 +1,6 @@
 import { ArrowUpRight, Mail, Phone } from "lucide-react";
 import Logo from "../components/Logo";
-import { InstagramIcon } from "../components/SocialIcons";
+import { InstagramIcon, WhatsAppIcon } from "../components/SocialIcons";
 import { navLinks, services, site } from "../data/content";
 
 export default function Footer() {
@@ -12,7 +12,7 @@ export default function Footer() {
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div>
-            <Logo />
+            <Logo boxed />
             <p className="mt-5 max-w-xs text-sm leading-relaxed">
               Draft tagline area — {site.tagline} Flights, tours, visas and complete travel support,
               all in one place.
@@ -26,6 +26,15 @@ export default function Footer() {
                 className="grid size-10 place-items-center rounded-xl bg-white/10 transition-all hover:-translate-y-0.5 hover:bg-leaf-600 hover:text-white"
               >
                 <InstagramIcon className="size-4.5" />
+              </a>
+              <a
+                href={site.whatsappHref}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Skywalk on WhatsApp"
+                className="grid size-10 place-items-center rounded-xl bg-white/10 transition-all hover:-translate-y-0.5 hover:bg-leaf-600 hover:text-white"
+              >
+                <WhatsAppIcon className="size-4.5" />
               </a>
             </div>
           </div>

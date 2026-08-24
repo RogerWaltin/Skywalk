@@ -1,11 +1,15 @@
 import { useEffect, useState } from "react";
 import { Menu, Phone, X } from "lucide-react";
 import Logo from "../components/Logo";
+import { WhatsAppIcon } from "../components/SocialIcons";
+import { useToast } from "../components/ToastContext";
+import { copyToClipboard } from "../utils/clipboard";
 import { navLinks, site } from "../data/content";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const showToast = useToast();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 32);
@@ -13,6 +17,11 @@ export default function Navbar() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  const handleCopyPhone = async () => {
+    const copied = await copyToClipboard(site.phoneCopy);
+    showToast(copied ? "Copied number to clipboard" : "Couldn't copy the number");
+  };
 
   const solid = scrolled || open;
 
@@ -45,19 +54,33 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <div className="hidden items-center gap-4 lg:flex">
-          <a
-            href={site.phoneHref}
-            className={`flex items-center gap-2 text-sm font-semibold transition-colors ${
-              solid ? "text-navy-900 hover:text-leaf-600" : "text-white hover:text-leaf-300"
+        <div className="hidden items-center gap-1.5 lg:flex">
+          <button
+            type="button"
+            onClick={handleCopyPhone}
+            title="Copy phone number"
+            aria-label="Copy phone number to clipboard"
+            className={`grid size-9 place-items-center rounded-full transition-colors ${
+              solid ? "hover:bg-leaf-50" : "hover:bg-white/10"
             }`}
           >
-            <Phone className="size-4 text-leaf-500" />
-            {site.phone}
+            <Phone className="size-4.5 text-leaf-500" />
+          </button>
+          <a
+            href={site.whatsappHref}
+            target="_blank"
+            rel="noreferrer"
+            title="Chat with us on WhatsApp"
+            aria-label="Chat with us on WhatsApp"
+            className={`grid size-9 place-items-center rounded-full transition-colors ${
+              solid ? "hover:bg-leaf-50" : "hover:bg-white/10"
+            }`}
+          >
+            <WhatsAppIcon className="size-4.5 text-leaf-500" />
           </a>
           <a
             href="#contact"
-            className="rounded-full bg-leaf-600 px-5 py-2.5 text-sm font-bold text-white shadow-lg shadow-leaf-600/25 transition-all hover:-translate-y-0.5 hover:bg-leaf-700"
+            className="ml-2 rounded-full bg-leaf-600 px-5 py-2.5 text-sm font-bold text-white shadow-lg shadow-leaf-600/25 transition-all hover:-translate-y-0.5 hover:bg-leaf-700"
           >
             Enquire Now
           </a>
@@ -100,12 +123,28 @@ export default function Navbar() {
           >
             Enquire Now
           </a>
-          <a
-            href={site.phoneHref}
-            className="flex items-center justify-center gap-2 pt-2 pb-1 text-sm font-semibold text-navy-700"
-          >
-            <Phone className="size-4 text-leaf-500" /> {site.phone}
-          </a>
+          <div className="flex items-center justify-center gap-2 pt-2 pb-1">
+            <button
+              type="button"
+              onClick={() => {
+                setOpen(false);
+                handleCopyPhone();
+              }}
+              aria-label="Copy phone number to clipboard"
+              className="grid size-11 place-items-center rounded-xl transition-colors hover:bg-leaf-50"
+            >
+              <Phone className="size-5 text-leaf-500" />
+            </button>
+            <a
+              href={site.whatsappHref}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Chat with us on WhatsApp"
+              className="grid size-11 place-items-center rounded-xl transition-colors hover:bg-leaf-50"
+            >
+              <WhatsAppIcon className="size-5 text-leaf-500" />
+            </a>
+          </div>
         </nav>
       </div>
     </header>
