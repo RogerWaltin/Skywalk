@@ -22,7 +22,7 @@ export function ToastProvider({ children }) {
       <div
         role="status"
         aria-live="polite"
-        className={`pointer-events-none fixed bottom-6 left-1/2 z-[80] -translate-x-1/2 transition-all duration-300 ease-out ${
+        className={`pointer-events-none fixed bottom-6 left-1/2 z-80 -translate-x-1/2 transition-all duration-300 ease-out ${
           toast.visible ? "translate-y-0 opacity-100" : "translate-y-3 opacity-0"
         }`}
       >
