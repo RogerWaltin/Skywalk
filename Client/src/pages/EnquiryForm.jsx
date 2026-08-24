@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Clock, Mail, MessageSquareText, Phone, Send } from "lucide-react";
-import SectionHeading from "./SectionHeading";
+import SectionHeading from "../components/SectionHeading";
 import { enquiry, site } from "../data/content";
 
 const inputClasses =
@@ -41,7 +41,7 @@ export default function EnquiryForm() {
 
         <div className="mt-14 grid overflow-hidden rounded-4xl shadow-2xl shadow-navy-900/10 lg:grid-cols-5">
           {/* Contact info panel */}
-          <div className="relative flex flex-col bg-linear-to-b from-navy-900 to-navy-950 p-8 text-white sm:p-10">
+          <div className="relative flex flex-col bg-linear-to-b from-navy-900 to-navy-950 p-8 text-white sm:p-10 lg:col-span-2">
             <h3 className="font-display text-2xl font-semibold">Contact Skywalk</h3>
             <p className="mt-3 text-sm leading-relaxed text-white/60">
               Placeholder note — reach us directly and we will be happy to help you plan your
@@ -49,37 +49,44 @@ export default function EnquiryForm() {
             </p>
 
             <ul className="mt-8 space-y-6">
-              <li className="flex items-start gap-4">
-                <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-white/10 text-sand-300">
-                  <Phone className="size-5" />
+              <li className="flex items-start gap-3.5">
+                <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-white/10 text-leaf-300">
+                  <Phone className="size-4.5" />
                 </span>
                 <div>
-                  <p className="text-xs font-bold tracking-[0.18em] text-white/50 uppercase">Phone</p>
-                  <a href={site.phoneHref} className="mt-1 block font-semibold hover:text-leaf-300">
+                  <p className="text-[11px] font-bold tracking-[0.18em] text-white/50 uppercase">
+                    Phone
+                  </p>
+                  <a
+                    href={site.phoneHref}
+                    className="mt-1 block text-sm font-semibold whitespace-nowrap hover:text-leaf-300"
+                  >
                     {site.phone}
                   </a>
                 </div>
               </li>
-              <li className="flex items-start gap-4">
-                <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-white/10 text-sand-300">
-                  <Mail className="size-5" />
+              <li className="flex items-start gap-3.5">
+                <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-white/10 text-leaf-300">
+                  <Mail className="size-4.5" />
                 </span>
                 <div>
-                  <p className="text-xs font-bold tracking-[0.18em] text-white/50 uppercase">Email</p>
+                  <p className="text-[11px] font-bold tracking-[0.18em] text-white/50 uppercase">
+                    Email
+                  </p>
                   <a
                     href={site.emailHref}
-                    className="mt-1 block font-semibold break-all hover:text-leaf-300"
+                    className="mt-1 block text-sm font-semibold whitespace-nowrap hover:text-leaf-300"
                   >
                     {site.email}
                   </a>
                 </div>
               </li>
-              <li className="flex items-start gap-4">
-                <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-white/10 text-sand-300">
-                  <Clock className="size-5" />
+              <li className="flex items-start gap-3.5">
+                <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-white/10 text-leaf-300">
+                  <Clock className="size-4.5" />
                 </span>
                 <div>
-                  <p className="text-xs font-bold tracking-[0.18em] text-white/50 uppercase">
+                  <p className="text-[11px] font-bold tracking-[0.18em] text-white/50 uppercase">
                     Office Hours
                   </p>
                   <p className="mt-1 font-semibold">Placeholder — to be confirmed</p>
@@ -93,7 +100,7 @@ export default function EnquiryForm() {
           </div>
 
           {/* Form panel */}
-          <div className="bg-white p-8 sm:p-10 lg:col-span-4">
+          <div className="bg-white p-8 sm:p-10 lg:col-span-3">
             {sent ? (
               <div className="grid h-full min-h-80 place-items-center text-center">
                 <div>

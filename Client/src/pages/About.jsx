@@ -1,5 +1,5 @@
 import { CheckCircle2 } from "lucide-react";
-import SectionHeading from "./SectionHeading";
+import SectionHeading from "../components/SectionHeading";
 import { about } from "../data/content";
 
 // NOTE: All copy here is PLACEHOLDER text — replace once the client provides
@@ -18,14 +18,14 @@ export default function About() {
       >
         <path
           d="M10 230 C 120 40, 260 240, 410 30"
-          stroke="#187e53"
+          stroke="#29792b"
           strokeWidth="2"
           strokeDasharray="1 10"
           strokeLinecap="round"
         />
-        <circle cx="10" cy="230" r="5" fill="#187e53" />
-        <circle cx="410" cy="30" r="5" fill="#0f2f45" />
-        <path d="M398 22l14 8-16 6z" fill="#0f2f45" />
+        <circle cx="10" cy="230" r="5" fill="#29792b" />
+        <circle cx="410" cy="30" r="5" fill="#102f56" />
+        <path d="M398 22l14 8-16 6z" fill="#102f56" />
       </svg>
 
       <div className="mx-auto grid w-full max-w-7xl items-center gap-14 px-4 sm:px-6 lg:grid-cols-2 lg:gap-20 lg:px-8">

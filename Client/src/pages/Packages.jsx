@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { ArrowRight, Clock, MapPin, Sparkles } from "lucide-react";
-import SectionHeading from "./SectionHeading";
+import SectionHeading from "../components/SectionHeading";
 import { packageCategories, packages } from "../data/content";
 
-// Example package cards — placeholder structure only. No real prices or
-// itineraries. Replace titles/images/blurbs with approved content later.
+// Package cards driven by data/content.js — categories: Domestic,
+// International, Religious. Pricing shown on request.
 export default function Packages() {
   const [active, setActive] = useState(packageCategories[0]);
   const visible = packages.filter((pkg) => pkg.category === active);
@@ -15,8 +15,8 @@ export default function Packages() {
         <SectionHeading
           dark
           eyebrow="Tour Packages"
-          title="Sample Journeys to Spark Ideas"
-          text="Example draft packages — final names, itineraries and pricing will be confirmed by the client."
+          title="Packages We Offer"
+          text="Handpicked journeys across India and around the world — every package can be tailored to your dates and budget."
         />
 
         {/* Category tabs */}
@@ -34,7 +34,7 @@ export default function Packages() {
                   : "border border-white/15 bg-white/5 text-white/70 hover:border-leaf-400/40 hover:text-white"
               }`}
             >
-              {category === "Pilgrimage" ? "Religious & Pilgrimage" : category}
+              {category}
             </button>
           ))}
         </div>
@@ -48,13 +48,13 @@ export default function Packages() {
               <div className="relative h-52 overflow-hidden">
                 <img
                   src={pkg.image}
-                  alt={`${pkg.title} (placeholder image)`}
+                  alt={`${pkg.title} tour package`}
                   loading="lazy"
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <span className="absolute top-4 left-4 inline-flex items-center gap-1.5 rounded-full bg-navy-950/70 px-3 py-1 text-xs font-bold tracking-wide text-sand-300 uppercase backdrop-blur-sm">
+                <span className="absolute top-4 left-4 inline-flex items-center gap-1.5 rounded-full bg-navy-950/70 px-3 py-1 text-xs font-bold tracking-wide text-leaf-300 uppercase backdrop-blur-sm">
                   <Sparkles className="size-3.5" />
-                  {pkg.category === "Pilgrimage" ? "Pilgrimage" : pkg.category}
+                  {pkg.category}
                 </span>
               </div>
               <div className="flex flex-1 flex-col p-6">
@@ -65,7 +65,7 @@ export default function Packages() {
                 <h3 className="mt-2.5 font-display text-xl font-semibold text-white">{pkg.title}</h3>
                 <p className="mt-2 flex-1 text-sm leading-relaxed text-white/60">{pkg.blurb}</p>
                 <div className="mt-5 flex items-center justify-between border-t border-white/10 pt-4">
-                  <span className="text-sm font-bold text-sand-300">Price on request</span>
+                  <span className="text-sm font-bold text-leaf-300">Price on request</span>
                   <a
                     href="#contact"
                     className="inline-flex items-center gap-1.5 text-sm font-bold text-leaf-400 transition-colors hover:text-leaf-300"

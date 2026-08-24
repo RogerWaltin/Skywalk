@@ -1,5 +1,5 @@
 import { ArrowRight, MapPin } from "lucide-react";
-import SectionHeading from "./SectionHeading";
+import SectionHeading from "../components/SectionHeading";
 import { destinationNote, destinations } from "../data/content";
 
 export default function Destinations() {
@@ -11,7 +11,7 @@ export default function Destinations() {
             align="left"
             eyebrow="Explore the World"
             title="Destinations Near, Far & Everywhere Between"
-            text="A glimpse of the kinds of journeys we can arrange — across India and around the globe."
+            text="From the Andaman Islands to the streets of Bangkok — discover the destinations Skywalk travellers love most."
           />
           <a
             href="#packages"
@@ -36,13 +36,13 @@ export default function Destinations() {
             >
               <img
                 src={destination.image}
-                alt={`${destination.name} (placeholder travel photo)`}
+                alt={`${destination.name} — ${destination.tag}`}
                 loading="lazy"
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-linear-to-t from-navy-950/85 via-navy-950/10 to-transparent" />
               <figcaption className="absolute inset-x-0 bottom-0 p-5">
-                <p className="text-[11px] font-bold tracking-[0.18em] text-sand-300 uppercase">
+                <p className="text-[11px] font-bold tracking-[0.18em] text-leaf-300 uppercase">
                   {destination.tag}
                 </p>
                 <p className="mt-1 flex items-center gap-1.5 font-display text-lg font-semibold text-white sm:text-xl">

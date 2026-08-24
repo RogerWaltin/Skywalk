@@ -1,6 +1,6 @@
 import { ArrowUpRight, Mail, Phone } from "lucide-react";
-import Logo from "./Logo";
-import { FacebookIcon, InstagramIcon } from "./SocialIcons";
+import Logo from "../components/Logo";
+import { InstagramIcon } from "../components/SocialIcons";
 import { navLinks, services, site } from "../data/content";
 
 export default function Footer() {
@@ -12,29 +12,20 @@ export default function Footer() {
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div>
-            <Logo dark />
+            <Logo />
             <p className="mt-5 max-w-xs text-sm leading-relaxed">
               Draft tagline area — {site.tagline} Flights, tours, visas and complete travel support,
               all in one place.
             </p>
             <div className="mt-6 flex gap-3">
               <a
-                href="https://instagram.com"
+                href={site.instagram}
                 target="_blank"
                 rel="noreferrer"
-                aria-label="Skywalk on Instagram (placeholder link)"
+                aria-label="Skywalk on Instagram"
                 className="grid size-10 place-items-center rounded-xl bg-white/10 transition-all hover:-translate-y-0.5 hover:bg-leaf-600 hover:text-white"
               >
                 <InstagramIcon className="size-4.5" />
-              </a>
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Skywalk on Facebook (placeholder link)"
-                className="grid size-10 place-items-center rounded-xl bg-white/10 transition-all hover:-translate-y-0.5 hover:bg-leaf-600 hover:text-white"
-              >
-                <FacebookIcon className="size-4.5" />
               </a>
             </div>
           </div>
@@ -80,10 +71,10 @@ export default function Footer() {
                   href={site.phoneHref}
                   className="flex items-center gap-3 transition-colors hover:text-leaf-300"
                 >
-                  <span className="grid size-9 shrink-0 place-items-center rounded-lg bg-white/10 text-sand-300">
+                  <span className="grid size-9 shrink-0 place-items-center rounded-lg bg-white/10 text-leaf-300">
                     <Phone className="size-4" />
                   </span>
-                  {site.phone}
+                  <span className="whitespace-nowrap">{site.phone}</span>
                 </a>
               </li>
               <li>
@@ -91,7 +82,7 @@ export default function Footer() {
                   href={site.emailHref}
                   className="flex items-center gap-3 transition-colors hover:text-leaf-300"
                 >
-                  <span className="grid size-9 shrink-0 place-items-center rounded-lg bg-white/10 text-sand-300">
+                  <span className="grid size-9 shrink-0 place-items-center rounded-lg bg-white/10 text-leaf-300">
                     <Mail className="size-4" />
                   </span>
                   <span className="break-all">{site.email}</span>

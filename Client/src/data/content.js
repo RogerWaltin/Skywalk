@@ -1,9 +1,8 @@
 // ============================================================================
-// SKYWALK TOURS & TRAVELS — SITE CONTENT (DRAFT / PLACEHOLDER)
+// SKYWALK TOURS & TRAVELS — SITE CONTENT
 // ----------------------------------------------------------------------------
-// ALL text, images and videos in this file are placeholders for the prototype.
-// Replace copy with client-approved marketing content before launch.
-// Do NOT treat descriptions, benefits or package details as real claims.
+// Tour packages and destinations reflect the agency's current offerings.
+// Remaining paragraphs marked as placeholders await client-approved copy.
 // ============================================================================
 
 export const site = {
@@ -15,6 +14,7 @@ export const site = {
   whatsappHref: "https://wa.me/917994015501",
   email: "skywalktravels92@gmail.com",
   emailHref: "mailto:skywalktravels92@gmail.com",
+  instagram: "https://www.instagram.com/skywalk_travels",
 };
 
 export const navLinks = [
@@ -75,11 +75,44 @@ export const about = {
 };
 
 // ---------------------------------------------------------------------------
-// SERVICES
+// IMAGES — verified Unsplash photos & Wikimedia Commons lead images
 // ---------------------------------------------------------------------------
 const img = (id, w = 800) =>
   `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=80`;
 
+const wm = (file, w = 1200) =>
+  `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(
+    file,
+  )}?width=${w}`;
+
+// Verified destination imagery (subject-accurate)
+const destImages = {
+  andaman: img("photo-1723203606060-b0390c387a81", 1400), // Havelock beach, Andaman
+  charminar: wm("Charminar_Hyderabad_1.jpg"),
+  indiaGate: img("photo-1705861144478-40b4c1157a24", 1200), // India Gate, New Delhi
+  munnar: wm("Munnar_Overview.jpg"), // Munnar tea plantations
+  kumarakom: wm("Kumarkom.jpg"), // Kumarakom backwaters
+  alleppeyHouseboat: img("photo-1593417033942-bcdf26b74700", 900),
+  alleppeyBoat: img("photo-1620495824403-9a9682fb18e7", 900),
+  periyar: wm("Periyar_National_Park.JPG"), // Thekkady
+  petronas: img("photo-1787078845567-6f713c714343", 1000), // Kuala Lumpur
+  thaiLongtail: img("photo-1528181304800-259b08848526", 900), // Thailand
+  watArun: wm("Templo Wat Arun, Bangkok, Tailandia, 2013-08-22, DD 30.jpg"),
+  railay: wm("Railay_Beach_5.jpg"), // Krabi
+  halongBay: img("photo-1643029891412-92f9a81a8c16", 1000), // Vietnam
+  elNido: wm("El_Nido_Bay_December_2018.jpg"), // Philippines
+  dubai: img("photo-1512453979798-5ea266f8880c", 1000), // Burj Khalifa skyline
+  masjidHaram: wm("Edited_Great_Mosque_of_Mecca1_5-2019-ccsa4.0_(cropped).jpg"), // Umrah
+  thiruvalluvar: wm("Thiruvalluvar_Statue_at_Kanyakumari_02.jpg"), // Kanyakumari
+  ajmerDargah: wm("Dargah_of_Sufi_saint_Moinuddin_Chishti_Ajmer_India_(5).JPG"),
+  pambanBridge: wm("Pamban_Bridge_Train_Passing.jpg"), // Rameshwaram
+  tirumala: wm("Tirumala_090615.jpg"), // Tirupati
+  mookambika: wm("Kollur_Sri_Mookambika_Temple_(4465798056).jpg"), // Udupi region
+};
+
+// ---------------------------------------------------------------------------
+// SERVICES
+// ---------------------------------------------------------------------------
 export const services = [
   {
     icon: "Plane",
@@ -139,126 +172,222 @@ export const services = [
 ];
 
 // ---------------------------------------------------------------------------
-// DESTINATIONS  (imagery only — no claim that these are operated destinations)
+// DESTINATIONS
 // ---------------------------------------------------------------------------
 export const destinations = [
   {
-    name: "Kerala Backwaters",
-    tag: "India · God's Own Country",
-    image: img("photo-1602216056096-3b40cc0c9944", 900),
+    name: "Andaman & Nicobar",
+    tag: "India · Island Getaway",
+    image: destImages.andaman,
     feature: true, // spans 2x2 on desktop
   },
   {
-    name: "Maldives",
-    tag: "International · Islands",
-    image: img("photo-1573843981267-be1999ff37cd", 900),
+    name: "Hyderabad",
+    tag: "India · City of Pearls",
+    image: destImages.charminar,
   },
   {
-    name: "Swiss Alps",
-    tag: "International · Mountains",
-    image: img("photo-1508672019048-805c876b67e2", 900),
+    name: "Delhi",
+    tag: "India · Heritage & Capital",
+    image: destImages.indiaGate,
   },
   {
-    name: "Taj Mahal, Agra",
-    tag: "India · Heritage",
-    image: img("photo-1548013146-72479768bada", 900),
+    name: "Munnar & Thekkady",
+    tag: "India · Hills & Wildlife",
+    image: destImages.munnar,
   },
   {
-    name: "Dubai",
-    tag: "International · City",
-    image: img("photo-1512453979798-5ea266f8880c", 900),
+    name: "Kumarakom",
+    tag: "India · Backwaters",
+    image: destImages.kumarakom,
   },
   {
-    name: "Bali",
-    tag: "International · Tropical",
-    image: img("photo-1537996194471-e657df975ab4", 900),
+    name: "Alleppey",
+    tag: "India · Houseboats",
+    image: destImages.alleppeyHouseboat,
+  },
+  {
+    name: "Kuala Lumpur",
+    tag: "Malaysia · Skyline City",
+    image: destImages.petronas,
+  },
+  {
+    name: "Bangkok",
+    tag: "Thailand · Temples & Markets",
+    image: destImages.watArun,
+  },
+  {
+    name: "Ha Long Bay",
+    tag: "Vietnam · Limestone Karsts",
+    image: destImages.halongBay,
+  },
+  {
+    name: "El Nido",
+    tag: "Philippines · Lagoons",
+    image: destImages.elNido,
+  },
+  {
+    name: "Dubai & Abu Dhabi",
+    tag: "UAE · Futuristic Cities",
+    image: destImages.dubai,
+  },
+  {
+    name: "Phuket & Krabi",
+    tag: "Thailand · Beaches & Karsts",
+    image: destImages.railay,
     wide: true, // spans 2 columns on desktop
-  },
-  {
-    name: "Santorini",
-    tag: "International · Islands",
-    image: img("photo-1613395877344-13d4a8e0d49e", 900),
-  },
-  {
-    name: "Thai Islands",
-    tag: "International · Beaches",
-    image: img("photo-1528181304800-259b08848526", 900),
   },
 ];
 
 export const destinationNote =
-  "Imagery shown for illustration. Speak to us about where you would like to travel — we arrange journeys across India and around the world.";
+  "These are just a few of the places we cover — tell us where you dream of going and we will take you there.";
 
 // ---------------------------------------------------------------------------
-// PACKAGES  (EXAMPLE STRUCTURE ONLY — no real prices or itineraries)
+// TOUR PACKAGES
 // ---------------------------------------------------------------------------
 export const packages = [
+  // --- Domestic ---
   {
     category: "Domestic",
-    title: "Kerala Serenity",
-    duration: "5 Days / 4 Nights",
-    image: img("photo-1593693397690-362cb9666fc2", 800),
-    blurb: "Munnar hills, Alleppey backwaters and Fort Kochi — sample draft itinerary.",
-  },
-  {
-    category: "Domestic",
-    title: "Himalayan Escape",
+    title: "Andaman Nicobar Islands — Samudram Package",
     duration: "6 Days / 5 Nights",
-    image: img("photo-1501785888041-af3ef285b470", 800),
-    blurb: "Mountain air, valleys and viewpoints — sample draft itinerary.",
+    image: destImages.andaman,
+    blurb:
+      "Cruise the islands from Port Blair — Cellular Jail history, coral beaches and Ross Island.",
   },
   {
     category: "Domestic",
-    title: "Golden Triangle",
-    duration: "4 Days / 3 Nights",
-    image: img("photo-1524492412937-b28074a5d7da", 800),
-    blurb: "Delhi, Agra and Jaipur heritage circuit — sample draft itinerary.",
-  },
-  {
-    category: "International",
-    title: "Maldives Island Getaway",
-    duration: "4 Days / 3 Nights",
-    image: img("photo-1514282401047-d79a71a590e8", 800),
-    blurb: "Overwater stays and turquoise lagoons — sample draft itinerary.",
-  },
-  {
-    category: "International",
-    title: "European Highlights",
-    duration: "8 Days / 7 Nights",
-    image: img("photo-1499856871958-5b9627545d1a", 800),
-    blurb: "Iconic cities and scenic rail journeys — sample draft itinerary.",
-  },
-  {
-    category: "International",
-    title: "Dubai City Break",
-    duration: "4 Days / 3 Nights",
-    image: img("photo-1512453979798-5ea266f8880c", 800),
-    blurb: "Skyline, desert safari and shopping — sample draft itinerary.",
-  },
-  {
-    category: "Pilgrimage",
-    title: "Temple Trails of South India",
-    duration: "6 Days / 5 Nights",
-    image: img("photo-1561361513-2d000a50f0dc", 800),
-    blurb: "Sacred temples and traditions — sample draft itinerary.",
-  },
-  {
-    category: "Pilgrimage",
-    title: "Himalayan Char Dham",
-    duration: "10 Days / 9 Nights",
-    image: img("photo-1464822759023-fed622ff2c3b", 800),
-    blurb: "A revered mountain yatra — sample draft itinerary.",
-  },
-  {
-    category: "Pilgrimage",
-    title: "Varanasi Spiritual Sojourn",
+    title: "Hyderabad Package",
     duration: "3 Days / 2 Nights",
-    image: img("photo-1561361513-2d000a50f0dc", 800),
-    blurb: "Ghats, evening aarti and heritage walks — sample draft itinerary.",
+    image: destImages.charminar,
+    blurb:
+      "Charminar, Golconda Fort, Salar Jung Museum and the city's famous biryani.",
+  },
+  {
+    category: "Domestic",
+    title: "Delhi Package",
+    duration: "4 Days / 3 Nights",
+    image: destImages.indiaGate,
+    blurb:
+      "India Gate, Red Fort, Qutub Minar and the bustling bazaars of Old Delhi.",
+  },
+  {
+    category: "Domestic",
+    title: "Munnar / Thekkady",
+    duration: "4 Days / 3 Nights",
+    image: destImages.munnar,
+    blurb:
+      "Tea-garden hills of Munnar plus Periyar Lake wildlife boating in Thekkady.",
+  },
+  {
+    category: "Domestic",
+    title: "Kumarakom / Alleppey",
+    duration: "3 Days / 2 Nights",
+    image: destImages.alleppeyBoat,
+    blurb:
+      "Houseboat nights on Vembanad Lake, palm-fringed canals and village life.",
+  },
+  // --- International ---
+  {
+    category: "International",
+    title: "Malaysia",
+    duration: "5 Days / 4 Nights",
+    image: destImages.petronas,
+    blurb:
+      "Kuala Lumpur's Petronas Towers, Batu Caves and a Genting Highlands escape.",
+  },
+  {
+    category: "International",
+    title: "Thailand",
+    duration: "5 Days / 4 Nights",
+    image: destImages.thaiLongtail,
+    blurb:
+      "Bangkok's grand temples, floating markets and easy-going beach days.",
+  },
+  {
+    category: "International",
+    title: "Phuket / Krabi",
+    duration: "5 Days / 4 Nights",
+    image: destImages.railay,
+    blurb:
+      "Limestone karsts, island-hopping to Phi Phi and Railay's famous beaches.",
+  },
+  {
+    category: "International",
+    title: "Vietnam",
+    duration: "6 Days / 5 Nights",
+    image: destImages.halongBay,
+    blurb:
+      "Overnight Ha Long Bay cruise, Hanoi's old quarter and Ho Chi Minh City.",
+  },
+  {
+    category: "International",
+    title: "Philippines",
+    duration: "6 Days / 5 Nights",
+    image: destImages.elNido,
+    blurb:
+      "El Nido's lagoons, Puerto Princesa's underground river and island beaches.",
+  },
+  {
+    category: "International",
+    title: "Dubai / Abu Dhabi",
+    duration: "5 Days / 4 Nights",
+    image: destImages.dubai,
+    blurb:
+      "Burj Khalifa views, desert safari, Sheikh Zayed Grand Mosque and more.",
+  },
+  // --- Religious ---
+  {
+    category: "Religious",
+    title: "Umrah Package",
+    duration: "14 Days / 13 Nights",
+    image: destImages.masjidHaram,
+    blurb:
+      "Makkah and Madinah ziyarats with complete visa, stay and transport assistance.",
+  },
+  {
+    category: "Religious",
+    title: "Nagur / Kanyakumari",
+    duration: "4 Days / 3 Nights",
+    image: destImages.thiruvalluvar,
+    blurb:
+      "Nagore Dargah blessings and the Vivekananda Rock Memorial at Kanyakumari.",
+  },
+  {
+    category: "Religious",
+    title: "Ajmer Package",
+    duration: "4 Days / 3 Nights",
+    image: destImages.ajmerDargah,
+    blurb:
+      "Ajmer Sharif Dargah darshan with a Pushkar Brahma temple visit.",
+  },
+  {
+    category: "Religious",
+    title: "Rameshwaram / Madurai",
+    duration: "3 Days / 2 Nights",
+    image: destImages.pambanBridge,
+    blurb:
+      "Ramanathaswamy Temple, the iconic Pamban Bridge and Meenakshi Amman Temple.",
+  },
+  {
+    category: "Religious",
+    title: "Tirupati",
+    duration: "2 Days / 1 Night",
+    image: destImages.tirumala,
+    blurb:
+      "Sri Venkateswara Swamy darshan at Tirumala, planned end to end for you.",
+  },
+  {
+    category: "Religious",
+    title: "Mookambika / Udupi",
+    duration: "4 Days / 3 Nights",
+    image: destImages.mookambika,
+    blurb:
+      "Kollur Mookambika darshan, Udupi Sri Krishna Matha and Malpe beach.",
   },
 ];
 
-export const packageCategories = ["Domestic", "International", "Pilgrimage"];
+export const packageCategories = ["Domestic", "International", "Religious"];
 
 // ---------------------------------------------------------------------------
 // WHY CHOOSE US  (GENERIC DRAFT BENEFITS — replace with approved copy)

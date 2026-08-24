@@ -25,7 +25,7 @@ export default function CtaBanner() {
         </div>
         <a
           href="#contact"
-          className="group inline-flex shrink-0 items-center gap-2 rounded-full bg-sand-400 px-8 py-4 text-sm font-bold text-navy-950 shadow-xl shadow-black/25 transition-all hover:-translate-y-0.5 hover:bg-sand-300"
+          className="group inline-flex shrink-0 items-center gap-2 rounded-full bg-white px-8 py-4 text-sm font-bold text-navy-900 shadow-xl shadow-black/25 transition-all hover:-translate-y-0.5 hover:bg-leaf-100"
         >
           Start Planning — It's Free
           <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
