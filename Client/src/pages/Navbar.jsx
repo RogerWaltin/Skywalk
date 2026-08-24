@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, Phone, X } from "lucide-react";
-import Logo from "./Logo";
+import Logo from "../components/Logo";
 import { navLinks, site } from "../data/content";
 
 export default function Navbar() {
@@ -26,7 +26,7 @@ export default function Navbar() {
     >
       <div className="mx-auto flex h-18 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <div className={solid ? "" : "[&_a]:text-white"}>
-          <Logo dark={!solid} />
+          <Logo />
         </div>
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Main navigation">
@@ -49,7 +49,7 @@ export default function Navbar() {
           <a
             href={site.phoneHref}
             className={`flex items-center gap-2 text-sm font-semibold transition-colors ${
-              solid ? "text-navy-900 hover:text-leaf-600" : "text-white hover:text-sand-300"
+              solid ? "text-navy-900 hover:text-leaf-600" : "text-white hover:text-leaf-300"
             }`}
           >
             <Phone className="size-4 text-leaf-500" />

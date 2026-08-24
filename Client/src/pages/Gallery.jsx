@@ -1,5 +1,5 @@
 import { Camera } from "lucide-react";
-import SectionHeading from "./SectionHeading";
+import SectionHeading from "../components/SectionHeading";
 import { gallery } from "../data/content";
 
 export default function Gallery() {

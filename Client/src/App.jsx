@@ -1,14 +1,15 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Services from "./components/Services";
-import Destinations from "./components/Destinations";
-import Packages from "./components/Packages";
-import WhyChooseUs from "./components/WhyChooseUs";
-import Gallery from "./components/Gallery";
-import CtaBanner from "./components/CtaBanner";
-import EnquiryForm from "./components/EnquiryForm";
-import Footer from "./components/Footer";
+import Navbar from "./pages/Navbar";
+import Hero from "./pages/Hero";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import Destinations from "./pages/Destinations";
+import Packages from "./pages/Packages";
+import WhyChooseUs from "./pages/WhyChooseUs";
+import Gallery from "./pages/Gallery";
+import CtaBanner from "./pages/CtaBanner";
+import EnquiryForm from "./pages/EnquiryForm";
+import Footer from "./pages/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
         <EnquiryForm />
       </main>
       <Footer />
+      <ScrollToTop />
     </>
   );
 }

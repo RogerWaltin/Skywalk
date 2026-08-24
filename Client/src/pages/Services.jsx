@@ -13,7 +13,7 @@ import {
   Stamp,
   TrainFront,
 } from "lucide-react";
-import SectionHeading from "./SectionHeading";
+import SectionHeading from "../components/SectionHeading";
 import { services } from "../data/content";
 
 const icons = {
@@ -64,7 +64,7 @@ export default function Services() {
           {/* Filler card prompting enquiry */}
           <div className="flex flex-col justify-between rounded-3xl bg-linear-to-br from-navy-900 to-navy-700 p-6 text-white shadow-lg">
             <div>
-              <Globe className="size-8 text-sand-300" strokeWidth={1.7} />
+              <Globe className="size-8 text-leaf-300" strokeWidth={1.7} />
               <h3 className="mt-4 font-display text-lg font-semibold">Something Else in Mind?</h3>
               <p className="mt-2 text-sm leading-relaxed text-white/70">
                 Draft copy — tell us what you need and we will help you arrange it.
@@ -72,7 +72,7 @@ export default function Services() {
             </div>
             <a
               href="#contact"
-              className="mt-6 inline-flex w-fit items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-bold text-navy-900 transition-colors hover:bg-sand-300"
+              className="mt-6 inline-flex w-fit items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-bold text-navy-900 transition-colors hover:bg-leaf-100"
             >
               Ask Us
               <ArrowUpRight className="size-4" />
