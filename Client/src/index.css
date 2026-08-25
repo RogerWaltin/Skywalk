@@ -68,3 +68,23 @@ body {
   background-color: var(--color-leaf-500);
   color: white;
 }
+
+/* Instagram gradient hover for social icon */
+.instagram-gradient {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+.instagram-gradient::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+.instagram-gradient:hover::before {
+  opacity: 1;
+}
