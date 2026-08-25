@@ -22,18 +22,18 @@ export default function Hero() {
 
       <div className="relative mx-auto w-full max-w-7xl px-4 pt-36 pb-40 sm:px-6 lg:px-8">
         <div className="max-w-2xl animate-fade-up">
-          <p className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-1.5 text-xs font-bold tracking-[0.2em] text-white uppercase backdrop-blur-sm">
-            <Compass className="size-3.5 text-leaf-300" />
+          <p className="inline-flex items-center gap-2 rounded-full border border-navy-900/30 bg-white/60 px-4 py-1.5 text-xs font-bold tracking-[0.2em] text-navy-900 uppercase backdrop-blur-sm">
+            <Compass className="size-3.5 text-leaf-700" />
             {hero.eyebrow}
           </p>
 
           <h1 className="mt-6 font-display text-5xl leading-[1.05] font-semibold text-balance text-white sm:text-6xl lg:text-7xl">
             {hero.titleLine1}
             <br />
-            <span className="text-leaf-300 italic">{hero.titleAccent}</span>
+            <span className="text-leaf-700 italic">{hero.titleAccent}</span>
           </h1>
 
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/80">
+          <p className="mt-6 max-w-xl font-semibold text-lg leading-relaxed text-navy-950 drop-shadow-[0_1px_3px_rgba(255,255,255,1)]">
             {hero.subtitle}
           </p>
 

@@ -46,7 +46,7 @@ export default function Navbar() {
               className={`rounded-full px-4 py-2 text-sm font-semibold transition-colors ${
                 solid
                   ? "text-navy-900 hover:bg-leaf-50 hover:text-leaf-700"
-                  : "text-white/90 hover:bg-white/10 hover:text-white"
+                    : "text-navy-900 hover:bg-navy-900/5 hover:text-navy-700"
               }`}
             >
               {link.label}

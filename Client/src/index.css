@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  /* Baloo 2 — adventurous, travel-forward display face */
-  --font-display: "Baloo 2", "Trebuchet MS", ui-rounded, sans-serif;
+  /* Futura PT — geometric display face */
+  --font-display: "Futura PT", "Futura", "Trebuchet MS", ui-rounded, sans-serif;
   /* Nunito — friendly and readable body face */
   --font-sans: "Nunito", ui-sans-serif, system-ui, -apple-system, sans-serif;
 
