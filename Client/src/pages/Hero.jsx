@@ -15,6 +15,7 @@ export default function Hero({ onEnquiry }) {
         muted
         loop
         playsInline
+        disablePictureInPicture
         aria-hidden="true"
       />
       <div className="absolute inset-0 bg-linear-to-r from-navy-950/90 via-navy-900/70 to-navy-900/30" />

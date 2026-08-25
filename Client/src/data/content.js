@@ -2,13 +2,12 @@
 // SKYWALK TOURS & TRAVELS — SITE CONTENT
 // ----------------------------------------------------------------------------
 // Tour packages and destinations reflect the agency's current offerings.
-// Remaining paragraphs marked as placeholders await client-approved copy.
 // ============================================================================
 
 export const site = {
   name: "Skywalk Tours & Travels",
   shortName: "Skywalk",
-  tagline: "Your Journey Begins Here...",
+  tagline: "Together, we journey ahead",
   phone: "+91 79940 15501",
   phoneHref: "tel:+917994015501",
   whatsappHref: "https://wa.me/917994015501",
@@ -34,7 +33,7 @@ export const hero = {
   titleLine1: "Your Journey",
   titleAccent: "Begins Here...",
   subtitle:
-    "Discover breathtaking destinations and let us plan every detail of a journey you will remember forever.",
+    "From flight bookings to full tour packages, we handle every detail so you can focus on the journey ahead.",
   primaryCta: { label: "Explore Our Services", href: "#services" },
   secondaryCta: { label: "Plan Your Trip", href: "#contact" },
   highlights: [
@@ -50,22 +49,21 @@ export const hero = {
 };
 
 // ---------------------------------------------------------------------------
-// ABOUT  (PLACEHOLDER COPY — awaiting final company description from client)
+// ABOUT
 // ---------------------------------------------------------------------------
 export const about = {
   eyebrow: "About Skywalk",
-  heading: "A New Travel Partner for Every Kind of Journey",
+  heading: "A Fresh Approach to Travel Planning",
   paragraphs: [
-    "Skywalk Tours & Travels is a newly launched travel agency built around one simple idea — planning a trip should feel as exciting as taking one. From tickets and visas to complete tour packages, we bring every part of your journey under one roof.",
-    "[Placeholder paragraph] This is draft copy. The final company description, story and credentials will be added once approved by the client.",
+    "Skywalk Tours & Travels was founded with a clear vision — travel planning should feel effortless, not overwhelming. We bring together flights, visas, tour packages and everything in between, so you have a single, reliable partner from the first conversation to your return home.",
+    "Whether you are dreaming of a quiet backwater cruise, a spiritual pilgrimage, or an international adventure, we take the time to understand what matters to you and build a trip that fits. No cookie-cutter itineraries, no hidden complications — just thoughtful planning and genuine care for every journey we handle.",
   ],
   points: [
-    "Complete travel services under one roof",
-    "Personalised trip planning assistance",
-    "Domestic & international journeys",
+    "Flights, visas, insurance and tours — all under one roof",
+    "Personalised itineraries tailored to your dates and interests",
+    "Domestic and international destinations covered",
   ],
   images: {
-    // TODO: replace stock photos with real photos of the agency/trips
     main: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=900&q=80",
     secondary:
       "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=700&q=80",
@@ -117,57 +115,57 @@ export const services = [
   {
     icon: "Plane",
     title: "Flight Tickets",
-    text: "Placeholder description — domestic and international flight bookings on all major airlines.",
+    text: "Domestic and international flight bookings across all major airlines, with fare options to suit every budget.",
   },
   {
     icon: "TrainFront",
     title: "Train Tickets",
-    text: "Placeholder description — confirmed train ticket assistance for routes across India.",
+    text: "Confirmed train ticket bookings for routes across India, including premium and sleeper classes.",
   },
   {
     icon: "Bus",
     title: "Bus Booking",
-    text: "Placeholder description — comfortable bus bookings for city, state and interstate travel.",
+    text: "Comfortable bus bookings for city, interstate and long-distance travel with trusted operators.",
   },
   {
     icon: "MapPinned",
     title: "Tour Packages",
-    text: "Placeholder description — ready-made and customised tour packages across India and abroad.",
+    text: "Ready-made and fully customised tour packages for destinations across India and around the world.",
   },
   {
     icon: "Landmark",
     title: "Religious & Pilgrimage Tours",
-    text: "Placeholder description — thoughtfully arranged pilgrimage journeys to sacred destinations.",
+    text: "Thoughtfully planned pilgrimage journeys to sacred destinations, with travel and stay handled end to end.",
   },
   {
     icon: "Ship",
     title: "Cruise Holidays",
-    text: "Placeholder description — relaxing cruise holidays on the sea, planned end to end.",
+    text: "Relaxing cruise holidays on the sea, from booking to boarding — we plan every step of the voyage.",
   },
   {
     icon: "Stamp",
     title: "Visa Services",
-    text: "Placeholder description — guidance and documentation support for your visa applications.",
+    text: "Guidance and documentation support for tourist, business and pilgrimage visa applications worldwide.",
   },
   {
     icon: "BookUser",
     title: "Passport Services",
-    text: "Placeholder description — new passport applications and renewals made simple.",
+    text: "Assistance with new passport applications and renewals, making the process quick and straightforward.",
   },
   {
     icon: "ShieldCheck",
     title: "Travel Insurance",
-    text: "Placeholder description — insurance options that keep you protected on every trip.",
+    text: "Comprehensive travel insurance options to keep you protected on every domestic and international trip.",
   },
   {
     icon: "HeartPulse",
     title: "Medical Tourism",
-    text: "Placeholder description — coordinating treatment travel with care and clarity.",
+    text: "Coordinating treatment travel with care — hospital bookings, accommodation and local transport arranged.",
   },
   {
     icon: "CarFront",
     title: "Transportation",
-    text: "Placeholder description — airport transfers, rentals and local transport arrangements.",
+    text: "Airport transfers, car rentals and local transport arrangements for a smooth travel experience.",
   },
 ];
 
@@ -390,28 +388,28 @@ export const packages = [
 export const packageCategories = ["Domestic", "International", "Religious"];
 
 // ---------------------------------------------------------------------------
-// WHY CHOOSE US  (GENERIC DRAFT BENEFITS — replace with approved copy)
+// WHY CHOOSE US
 // ---------------------------------------------------------------------------
 export const whyChooseUs = [
   {
     icon: "Users",
     title: "Personalised Travel Assistance",
-    text: "Draft copy — a dedicated point of contact who listens first and plans around what you actually want.",
+    text: "A dedicated travel coordinator who listens to your preferences and plans around what matters most to you.",
   },
   {
     icon: "CalendarCheck",
-    title: "Convenient Booking",
-    text: "Draft copy — tickets, stays and paperwork handled through one simple, transparent process.",
+    title: "Seamless Booking",
+    text: "Flights, stays, visas and paperwork handled through one simple, transparent process — no juggling multiple vendors.",
   },
   {
     icon: "Globe",
     title: "Complete Travel Services",
-    text: "Draft copy — flights, visas, insurance and packages together, so nothing slips through the cracks.",
+    text: "Everything from flight tickets to travel insurance under one roof, so every detail is covered and nothing slips through.",
   },
   {
     icon: "Smile",
-    title: "Hassle-Free Planning",
-    text: "Draft copy — we take care of the details and follow-ups so you can simply look forward to the trip.",
+    title: "Dedicated Support",
+    text: "We stay with you from the first enquiry to your return home — handling follow-ups, changes and anything in between.",
   },
 ];
 
@@ -437,8 +435,8 @@ export const ctaBanner = {
     "https://videos.pexels.com/video-files/3571264/3571264-hd_1280_720_30fps.mp4",
   poster:
     "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80",
-  heading: "Ready to Plan Your Next Journey?",
-  text: "Tell us where you dream of going — we will handle the rest.",
+  heading: "Your Next Adventure Starts With a Conversation",
+  text: "Tell us where you want to go — we will plan the rest, down to the last detail.",
 };
 
 // ---------------------------------------------------------------------------

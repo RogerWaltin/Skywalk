@@ -11,7 +11,7 @@ export default function WhyChooseUs() {
         <SectionHeading
           eyebrow="Why Choose Skywalk"
           title="Travel Planning Without the Headache"
-          text="Draft benefits below — final wording to be supplied by the client."
+          text="Here is what sets Skywalk apart — every trip is planned with care, from the first call to your journey home."
         />
 
         <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">

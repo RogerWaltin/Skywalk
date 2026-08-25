@@ -9,7 +9,7 @@ export default function Gallery() {
         <SectionHeading
           eyebrow="Travel Experiences"
           title="Moments Waiting to Be Collected"
-          text="Placeholder travel photography — real trip photos will be added as they become available."
+          text="A glimpse into the journeys we plan — real trip photos coming soon."
         />
 
         {/* Masonry-style collage */}
@@ -23,7 +23,7 @@ export default function Gallery() {
             >
               <img
                 src={src}
-                alt={`Travel experience ${index + 1} (placeholder image)`}
+                alt={`Travel experience ${index + 1}`}
                 loading="lazy"
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
               />
@@ -31,7 +31,7 @@ export default function Gallery() {
               <figcaption className="absolute inset-x-0 bottom-0 flex translate-y-3 items-center justify-center pb-5 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
                 <span className="inline-flex items-center gap-2 rounded-full bg-white/90 px-4 py-2 text-xs font-bold text-navy-900 backdrop-blur-sm">
                   <Camera className="size-3.5" />
-                  Placeholder caption
+                  Skywalk Travels
                 </span>
               </figcaption>
             </figure>
