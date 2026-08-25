@@ -46,10 +46,13 @@ export default function About() {
               loading="lazy"
             />
           </div>
-          <div className="absolute -top-6 -left-3 hidden rounded-2xl bg-leaf-600 px-5 py-4 text-white shadow-xl sm:block">
+
+          {/* NOTE: removed this cus doesn't look good but keeping in case we change our mind */}
+          {/* <div className="absolute -top-6 -left-3 hidden rounded-2xl bg-leaf-600 px-5 py-4 text-white shadow-xl sm:block">
             <p className="font-display text-2xl font-semibold">New</p>
             <p className="text-xs font-bold tracking-widest uppercase">Just launched</p>
-          </div>
+          </div> */}
+
         </div>
 
         {/* Copy */}

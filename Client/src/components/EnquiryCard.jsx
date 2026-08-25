@@ -123,7 +123,7 @@ export default function EnquiryCard() {
               <input required type="email" name="email" placeholder="priya@example.com" className={inputClasses} autoComplete="off" />
             </Field>
 
-            {/* NOTE: keeping this here just in case. make sure  */}
+            {/* NOTE: keeping this here just in case. */}
             {/* <Field label="Destination">
               <input type="text" name="destination" placeholder="Where would you like to go?" className={inputClasses} autoComplete="off" />
             </Field> */}
