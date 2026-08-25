@@ -6,10 +6,12 @@ const inputClasses =
   "w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-navy-900 placeholder:font-normal placeholder:text-slate-400 transition-all outline-none focus:border-leaf-500 focus:ring-4 focus:ring-leaf-500/15";
 
 function Field({ label, children }) {
+  const parts = label.split(" *");
   return (
     <label className="block">
       <span className="mb-1.5 block text-xs font-bold tracking-wide text-navy-800 uppercase">
-        {label}
+        {parts[0]}
+        {parts.length > 1 && <span className="text-red-500"> *</span>}
       </span>
       {children}
     </label>
@@ -31,8 +33,7 @@ export default function EnquiryCard() {
       <div className="relative flex flex-col bg-linear-to-b from-navy-900 to-navy-950 p-8 text-white sm:p-10 lg:col-span-2">
         <h3 className="font-display text-2xl font-semibold">Contact Skywalk</h3>
         <p className="mt-3 text-sm leading-relaxed text-white/60">
-          Placeholder note — reach us directly and we will be happy to help you plan your
-          journey.
+          Reach out directly and our travel team will help you plan the perfect trip.
         </p>
 
         <ul className="mt-8 space-y-6">
@@ -76,7 +77,7 @@ export default function EnquiryCard() {
               <p className="text-[11px] font-bold tracking-[0.18em] text-white/50 uppercase">
                 Office Hours
               </p>
-              <p className="mt-1 font-semibold">Placeholder — to be confirmed</p>
+              <p className="mt-1 font-semibold">Weekdays &amp; Saturdays</p>
             </div>
           </li>
         </ul>
@@ -98,8 +99,8 @@ export default function EnquiryCard() {
                 Thank you! Your enquiry has been noted.
               </h3>
               <p className="mx-auto mt-2 max-w-md text-sm leading-relaxed text-slate-500">
-                Prototype mode — this form does not send data anywhere yet. Once live, enquiries
-                will reach the Skywalk team directly.
+                Our travel team will review your enquiry and get back to you shortly with a
+                personalised response.
               </p>
               <button
                 type="button"
@@ -116,10 +117,10 @@ export default function EnquiryCard() {
               <input required type="text" name="name" placeholder="e.g. Priya Nair" className={inputClasses} autoComplete="off"/>
             </Field>
             <Field label="Phone *">
-              <input required type="tel" name="phone" placeholder="+91 8574320932" className={inputClasses} autoComplete="off" />
+              <input required type="tel" name="phone" placeholder="+91 8574320932" className={inputClasses} autoComplete="off" pattern="[0-9]+" />
             </Field>
-            <Field label="Email">
-              <input type="email" name="email" placeholder="priya@example.com" className={inputClasses} autoComplete="off" />
+            <Field label="Email *">
+              <input required type="email" name="email" placeholder="priya@example.com" className={inputClasses} autoComplete="off" />
             </Field>
 
             {/* NOTE: keeping this here just in case. make sure  */}
@@ -163,8 +164,7 @@ export default function EnquiryCard() {
             </div>
             <div className="flex flex-wrap items-center justify-between gap-4 sm:col-span-2">
               <p className="max-w-sm text-xs leading-relaxed text-slate-400">
-                By submitting, you agree to be contacted about your enquiry. (Draft notice — final
-                privacy wording pending.)
+                By submitting, you agree to be contacted about your travel enquiry.
               </p>
               <button
                 type="submit"

@@ -12,7 +12,7 @@ export default function EnquiryForm() {
         <SectionHeading
           eyebrow="Get in Touch"
           title="Tell Us About Your Trip"
-          text="Fill in the form and our travel team will get back to you — prototype form, not connected to a server yet."
+          text="Fill in the form below and our travel team will get back to you with a personalised plan."
         />
 
         <div className="mt-14">

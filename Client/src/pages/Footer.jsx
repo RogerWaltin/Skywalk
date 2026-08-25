@@ -14,7 +14,7 @@ export default function Footer() {
           <div>
             <Logo />
             <p className="mt-5 max-w-xs text-sm leading-relaxed">
-              Draft tagline area — {site.tagline} Flights, tours, visas and complete travel support,
+              {site.tagline} Flights, tours, visas and complete travel support,
               all in one place.
             </p>
             <div className="mt-6 flex gap-3">
@@ -90,7 +90,8 @@ export default function Footer() {
               </li>
             </ul>
             <p className="mt-6 rounded-xl border border-dashed border-white/15 p-4 text-xs leading-relaxed text-white/40">
-              Office address placeholder — to be added once confirmed by the client.
+              Contact us for our office location — we are happy to meet in person or connect
+              online.
             </p>
           </div>
         </div>
@@ -100,7 +101,7 @@ export default function Footer() {
             © {year} {site.name}. All rights reserved.
           </p>
           <p className="text-white/40">
-            Prototype website — content pending final approval. Imagery: Unsplash &amp; Pexels.
+            Imagery: Unsplash &amp; Pexels.
           </p>
         </div>
       </div>

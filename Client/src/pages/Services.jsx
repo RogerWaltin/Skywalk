@@ -37,7 +37,7 @@ export default function Services({ onEnquiry }) {
         <SectionHeading
           eyebrow="Our Services"
           title="Everything Your Journey Needs, Under One Roof"
-          text="From tickets and documents to complete holidays — placeholder descriptions below, ready to be replaced with approved copy."
+          text="From flight bookings and visa assistance to complete tour packages — explore the full range of travel services we provide."
         />
 
         <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
@@ -68,7 +68,7 @@ export default function Services({ onEnquiry }) {
               <Globe className="size-8 text-leaf-300" strokeWidth={1.7} />
               <h3 className="mt-4 font-display text-lg font-semibold">Something Else in Mind?</h3>
               <p className="mt-2 text-sm leading-relaxed text-white/70">
-                Draft copy — tell us what you need and we will help you arrange it.
+                Got something else in mind? Tell us what you need and we will make it happen.
               </p>
             </div>
             <button
