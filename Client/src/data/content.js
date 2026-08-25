@@ -422,14 +422,14 @@ export const whyChooseUs = [
 // GALLERY
 // ---------------------------------------------------------------------------
 export const gallery = [
-  { src: "/Golconda_Fort.jpg", caption: "Fort Exploration" },
+  { src: img("photo-1621909321963-2276c9660298", 700), caption: "Fort Exploration" },
   { src: px("13691355", 700), caption: "Mountain Hiking" },
-  { src: "/Houseboat.jpg", caption: "Houseboat Cruise" },
-  { src: "/Island_Hopping.jpg", caption: "Island Hopping" },
+  { src: img("photo-1707893013488-51672ef83425", 700), caption: "Houseboat Cruise" },
+  { src: img("photo-1672933354004-3cbd9874f099", 700), caption: "Island Hopping" },
   { src: px("7276634", 700), caption: "Sea Kayaking" },
-  { src: "/Desert_Safari.jpg", caption: "Desert Safari", position: "center 70%" },
+  { src: "https://images.unsplash.com/flagged/photo-1550489518-40f49ba4bf20?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", caption: "Desert Safari" },
   { src: px("16012748", 700), caption: "Sacred Journey" },
-  { src: "/Vivekananda_Rock.jpg", caption: "Coastal Pilgrimage" },
+  { src: "https://images.unsplash.com/photo-1527705381526-469031509a9d?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", caption: "Coastal Pilgrimage" },
 ];
 
 // ---------------------------------------------------------------------------
