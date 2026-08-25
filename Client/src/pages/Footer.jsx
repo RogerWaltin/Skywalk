@@ -1,4 +1,4 @@
-import { ArrowUpRight, Mail, Phone } from "lucide-react";
+import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
 import Logo from "../components/Logo";
 import { InstagramIcon } from "../components/SocialIcons";
 import { navLinks, services, site } from "../data/content";
@@ -88,11 +88,24 @@ export default function Footer() {
                   <span className="break-all">{site.email}</span>
                 </a>
               </li>
+              <li className="flex items-start gap-3">
+                <span className="grid size-9 shrink-0 place-items-center rounded-lg bg-white/10 text-leaf-300">
+                  <MapPin className="size-4" />
+                </span>
+                <div>
+                  <p className="font-semibold leading-snug">{site.address}</p>
+                  <a
+                    href={site.mapsHref}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-1.5 inline-flex items-center gap-1 text-xs font-bold text-leaf-300 hover:text-leaf-200 transition-colors"
+                  >
+                    <MapPin className="size-3" />
+                    Get Directions
+                  </a>
+                </div>
+              </li>
             </ul>
-            <p className="mt-6 rounded-xl border border-dashed border-white/15 p-4 text-xs leading-relaxed text-white/40">
-              Contact us for our office location — we are happy to meet in person or connect
-              online.
-            </p>
           </div>
         </div>
 
