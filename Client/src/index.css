@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  /* Baloo 2 — adventurous, travel-forward display face */
-  --font-display: "Baloo 2", "Trebuchet MS", ui-rounded, sans-serif;
+  /* Futura PT — geometric display face */
+  --font-display: "Futura PT", "Futura", "Trebuchet MS", ui-rounded, sans-serif;
   /* Nunito — friendly and readable body face */
   --font-sans: "Nunito", ui-sans-serif, system-ui, -apple-system, sans-serif;
 
@@ -118,4 +118,24 @@ body {
 ::selection {
   background-color: var(--color-leaf-500);
   color: white;
+}
+
+/* Instagram gradient hover for social icon */
+.instagram-gradient {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+.instagram-gradient::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+.instagram-gradient:hover::before {
+  opacity: 1;
 }

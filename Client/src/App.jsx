@@ -1,3 +1,4 @@
+import { ToastProvider } from "./components/Toast";
 import { useState } from "react";
 import Navbar from "./pages/Navbar";
 import Hero from "./pages/Hero";
@@ -19,6 +20,8 @@ export default function App() {
   const closeEnquiryModal = () => setIsEnquiryModalOpen(false);
 
   return (
+    <ToastProvider>
+      <Navbar />
     <>
       <Navbar onEnquiry={openEnquiryModal} />
       <main>
@@ -34,6 +37,7 @@ export default function App() {
       </main>
       <Footer />
       <ScrollToTop />
+    </ToastProvider>
       <EnquiryModal open={isEnquiryModalOpen} onClose={closeEnquiryModal} />
     </>
   );

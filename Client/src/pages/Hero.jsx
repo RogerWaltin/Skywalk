@@ -18,24 +18,23 @@ export default function Hero({ onEnquiry }) {
         disablePictureInPicture
         aria-hidden="true"
       />
-      <div className="absolute inset-0 bg-linear-to-r from-navy-950/90 via-navy-900/70 to-navy-900/30" />
+      {/* Light at the top so the navbar logo sits on the sky; navy scrim below for text */}
+      {/* <div className="absolute inset-0 bg-linear-to-b from-navy-950/0 via-navy-950/75 via-30% to-navy-950/90" /> */}
 
       <div className="relative mx-auto w-full max-w-7xl px-4 pt-36 pb-40 sm:px-6 lg:px-8">
         <div className="max-w-2xl animate-fade-up">
-          <p className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-1.5 text-xs font-bold tracking-[0.2em] text-white uppercase backdrop-blur-sm">
-            <Compass className="size-3.5 text-leaf-300" />
+          <p className="inline-flex items-center gap-2 rounded-full border border-navy-900/30 bg-white/60 px-4 py-1.5 text-xs font-bold tracking-[0.2em] text-navy-900 uppercase backdrop-blur-sm">
+            <Compass className="size-3.5 text-leaf-700" />
             {hero.eyebrow}
           </p>
 
           <h1 className="mt-6 font-display text-5xl leading-[1.05] font-semibold text-balance text-white sm:text-6xl lg:text-7xl">
             {hero.titleLine1}
             <br />
-            <span className="text-leaf-300 italic">{hero.titleAccent}</span>
+            <span className="text-leaf-700 italic">{hero.titleAccent}</span>
           </h1>
 
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/80">
-            {hero.subtitle}
-          </p>
+          <p className="mt-6 max-w-xl text-lg font-medium text-white" style={{ textShadow: "0 0 2px rgba(255,255,255,0.8), 0 0 5px rgba(255,255,255,0.35)" }}>{hero.subtitle}</p>
 
           <div className="mt-9 flex flex-wrap items-center gap-4">
             <a
