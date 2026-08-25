@@ -33,9 +33,7 @@ export default function Hero() {
             <span className="text-leaf-700 italic">{hero.titleAccent}</span>
           </h1>
 
-          <p className="mt-6 max-w-xl font-semibold text-lg leading-relaxed text-navy-950 drop-shadow-[0_1px_3px_rgba(255,255,255,1)]">
-            {hero.subtitle}
-          </p>
+          <p className="mt-6 max-w-xl text-lg font-medium text-white" style={{ textShadow: "0 0 2px rgba(255,255,255,0.8), 0 0 5px rgba(255,255,255,0.35)" }}>{hero.subtitle}</p>
 
           <div className="mt-9 flex flex-wrap items-center gap-4">
             <a

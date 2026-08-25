@@ -34,7 +34,7 @@ export default function Navbar() {
       }`}
     >
       <div className="mx-auto flex h-18 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <div className={solid ? "" : "[&_a]:text-white"}>
+        <div className={`${solid ? "" : "[&_a]:text-white"} [&_img]:h-12 sm:[&_img]:h-14`}>
           <Logo />
         </div>
 
