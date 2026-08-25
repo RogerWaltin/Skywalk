@@ -14,7 +14,7 @@ export default function Gallery() {
 
         {/* Masonry-style collage */}
         <div className="mt-14 columns-2 gap-4 space-y-4 sm:gap-5 sm:space-y-5 lg:columns-4">
-          {gallery.map((src, index) => (
+          {gallery.map(({ src, caption }, index) => (
             <figure
               key={src}
               className={`group relative break-inside-avoid overflow-hidden rounded-3xl ${
@@ -23,7 +23,7 @@ export default function Gallery() {
             >
               <img
                 src={src}
-                alt={`Travel experience ${index + 1}`}
+                alt={caption}
                 loading="lazy"
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
               />
@@ -31,7 +31,7 @@ export default function Gallery() {
               <figcaption className="absolute inset-x-0 bottom-0 flex translate-y-3 items-center justify-center pb-5 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
                 <span className="inline-flex items-center gap-2 rounded-full bg-white/90 px-4 py-2 text-xs font-bold text-navy-900 backdrop-blur-sm">
                   <Camera className="size-3.5" />
-                  Skywalk Travels
+                  {caption}
                 </span>
               </figcaption>
             </figure>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Clock, Mail, MessageSquareText, Phone, Send } from "lucide-react";
+import { Clock, Mail, MapPin, MessageSquareText, Phone, Send } from "lucide-react";
 import { enquiry, site } from "../data/content";
 
 const inputClasses =
@@ -78,6 +78,26 @@ export default function EnquiryCard() {
                 Office Hours
               </p>
               <p className="mt-1 font-semibold">Weekdays &amp; Saturdays</p>
+            </div>
+          </li>
+          <li className="flex items-start gap-3.5">
+            <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-white/10 text-leaf-300">
+              <MapPin className="size-4.5" />
+            </span>
+            <div>
+              <p className="text-[11px] font-bold tracking-[0.18em] text-white/50 uppercase">
+                Office Address
+              </p>
+              <p className="mt-1 text-sm font-semibold leading-snug">{site.address}</p>
+              <a
+                href={site.mapsHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 inline-flex items-center gap-1.5 text-xs font-bold text-leaf-300 hover:text-leaf-200 transition-colors"
+              >
+                <MapPin className="size-3" />
+                Get Directions
+              </a>
             </div>
           </li>
         </ul>
