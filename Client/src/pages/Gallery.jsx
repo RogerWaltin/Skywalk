@@ -16,7 +16,7 @@ export default function Gallery() {
         <div className="mt-14 columns-2 gap-4 space-y-4 sm:gap-5 sm:space-y-5 lg:columns-4">
           {gallery.map(({ src, caption, position }, index) => (
             <figure
-              key={item.src}
+              key={src}
               className={`group relative break-inside-avoid overflow-hidden rounded-3xl ${
                 index % 3 === 0 ? "aspect-3/4" : index % 3 === 1 ? "aspect-square" : "aspect-4/3"
               }`}

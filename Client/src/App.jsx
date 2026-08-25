@@ -37,8 +37,8 @@ export default function App() {
       </main>
       <Footer />
       <ScrollToTop />
-    </ToastProvider>
       <EnquiryModal open={isEnquiryModalOpen} onClose={closeEnquiryModal} />
     </>
+    </ToastProvider>
   );
 }

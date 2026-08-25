@@ -117,6 +117,7 @@ export default function Navbar({ onEnquiry }) {
               {link.label}
             </a>
           ))}
+          <a>
           <button
             type="button"
             onClick={() => {
@@ -126,6 +127,7 @@ export default function Navbar({ onEnquiry }) {
             className="mt-2 block w-full rounded-xl bg-leaf-600 px-4 py-3 text-center text-base font-bold text-white"
           >
             Enquire Now
+          </button>
           </a>
           <div className="flex items-center justify-center gap-2 pt-2 pb-1">
             <button
