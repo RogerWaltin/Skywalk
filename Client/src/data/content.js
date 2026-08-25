@@ -15,8 +15,7 @@ export const site = {
   emailHref: "mailto:skywalktravels92@gmail.com",
   instagram: "https://www.instagram.com/skywalk_travels",
   address: "Room No. 876, 3rd Floor, Penta Plaza, North Paravur, Kerala 683513",
-  mapsHref:
-    "https://www.google.com/maps/search/?api=1&query=Room+No.+876,+3rd+Floor,+Penta+Plaza,+North+Paravur,+Kerala+683513",
+  mapsHref: "https://maps.app.goo.gl/K4trFHpKBTdUnVu4A",
 };
 
 export const navLinks = [
@@ -85,6 +84,9 @@ const wm = (file, w = 1200) =>
   `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(
     file,
   )}?width=${w}`;
+
+const px = (id, w = 800) =>
+  `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&w=${w}`;
 
 // Verified destination imagery (subject-accurate)
 const destImages = {
@@ -420,14 +422,14 @@ export const whyChooseUs = [
 // GALLERY
 // ---------------------------------------------------------------------------
 export const gallery = [
-  { src: img("photo-1544551763-46a013bb70d5", 700), caption: "Reef Snorkelling" },
-  { src: img("photo-1523906834658-6e24ef2386f9", 700), caption: "Venice Gondola Ride" },
-  { src: img("photo-1552465011-b4e21bf6e79a", 700), caption: "Temple Exploring" },
-  { src: img("photo-1469474968028-56623f02e42e", 700), caption: "Valley Sunrise Hike" },
-  { src: img("photo-1540541338287-41700207dee6", 700), caption: "Infinity Pool Lounge" },
-  { src: img("photo-1548574505-5e239809ee19", 700), caption: "Ocean Cruise" },
-  { src: img("photo-1599640842225-85d111c60e6b", 700), caption: "Deck Sunset Drinks" },
-  { src: img("photo-1569154941061-e231b4725ef1", 700), caption: "Window-Seat Views" },
+  { src: "/Golconda_Fort.jpg", caption: "Fort Exploration" },
+  { src: px("13691355", 700), caption: "Mountain Hiking" },
+  { src: "/Houseboat.jpg", caption: "Houseboat Cruise" },
+  { src: "/Island_Hopping.jpg", caption: "Island Hopping" },
+  { src: px("7276634", 700), caption: "Sea Kayaking" },
+  { src: "/Desert_Safari.jpg", caption: "Desert Safari", position: "center 70%" },
+  { src: px("16012748", 700), caption: "Sacred Journey" },
+  { src: "/Vivekananda_Rock.jpg", caption: "Coastal Pilgrimage" },
 ];
 
 // ---------------------------------------------------------------------------
