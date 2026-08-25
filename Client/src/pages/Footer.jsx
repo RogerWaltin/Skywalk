@@ -1,4 +1,4 @@
-import { ArrowUpRight, Mail, Phone } from "lucide-react";
+import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
 import Logo from "../components/Logo";
 import { InstagramIcon, WhatsAppIcon } from "../components/SocialIcons";
 import { navLinks, services, site } from "../data/content";
@@ -16,7 +16,7 @@ export default function Footer() {
               <Logo />
             </div>
             <p className="mt-1 max-w-xs text-sm leading-relaxed">
-              Draft tagline area — {site.tagline} Flights, tours, visas and complete travel support,
+              {site.tagline} Flights, tours, visas and complete travel support,
               all in one place.
             </p>
             <div className="mt-6 flex gap-3">
@@ -99,10 +99,24 @@ export default function Footer() {
                   <span className="break-all">{site.email}</span>
                 </a>
               </li>
+              <li className="flex items-start gap-3">
+                <span className="grid size-9 shrink-0 place-items-center rounded-lg bg-white/10 text-leaf-300">
+                  <MapPin className="size-4" />
+                </span>
+                <div>
+                  <p className="font-semibold leading-snug">{site.address}</p>
+                  <a
+                    href={site.mapsHref}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-1.5 inline-flex items-center gap-1 text-xs font-bold text-leaf-300 hover:text-leaf-200 transition-colors"
+                  >
+                    <MapPin className="size-3" />
+                    Get Directions
+                  </a>
+                </div>
+              </li>
             </ul>
-            <p className="mt-6 rounded-xl border border-dashed border-white/15 p-4 text-xs leading-relaxed text-white/40">
-              Office address placeholder — to be added once confirmed by the client.
-            </p>
           </div>
         </div>
 
@@ -111,7 +125,7 @@ export default function Footer() {
             © {year} {site.name}. All rights reserved.
           </p>
           <p className="text-white/40">
-            Prototype website — content pending final approval. Imagery: Unsplash &amp; Pexels.
+            Imagery: Unsplash &amp; Pexels.
           </p>
         </div>
       </div>

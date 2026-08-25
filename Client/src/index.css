@@ -33,6 +33,17 @@
 
   --animate-float: float 7s ease-in-out infinite;
   --animate-fade-up: fade-up 0.8s ease-out both;
+  --animate-fade-in: fade-in var(--modal-duration, 0.5s) ease-out both;
+  --animate-fade-out: fade-out var(--modal-duration, 0.5s) ease-out both;
+  --animate-modal-in: modal-in var(--modal-duration, 0.5s) cubic-bezier(0.16, 1, 0.3, 1)
+    both;
+  --animate-modal-out: modal-out var(--modal-duration, 0.5s) cubic-bezier(
+      0.16,
+      1,
+      0.3,
+      1
+    )
+    both;
 
   @keyframes float {
     0%,
@@ -52,6 +63,46 @@
     to {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+  @keyframes modal-in {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes modal-out {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(24px);
     }
   }
 }

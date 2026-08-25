@@ -9,12 +9,12 @@ export default function Gallery() {
         <SectionHeading
           eyebrow="Travel Experiences"
           title="Moments Waiting to Be Collected"
-          text="A glimpse into the journeys we craft — from serene backwaters to sacred temples and vibrant city skylines."
+          text="A glimpse into the journeys we plan — real trip photos coming soon."
         />
 
         {/* Masonry-style collage */}
         <div className="mt-14 columns-2 gap-4 space-y-4 sm:gap-5 sm:space-y-5 lg:columns-4">
-          {gallery.map((item, index) => (
+          {gallery.map(({ src, caption, position }, index) => (
             <figure
               key={item.src}
               className={`group relative break-inside-avoid overflow-hidden rounded-3xl ${
@@ -22,16 +22,17 @@ export default function Gallery() {
               }`}
             >
               <img
-                src={item.src}
-                alt={item.caption}
+                src={src}
+                alt={caption}
                 loading="lazy"
+                style={position ? { objectPosition: position } : undefined}
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-navy-950/0 transition-colors duration-300 group-hover:bg-navy-950/25" />
               <figcaption className="absolute inset-x-0 bottom-0 flex translate-y-3 items-center justify-center pb-5 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
                 <span className="inline-flex items-center gap-2 rounded-full bg-white/90 px-4 py-2 text-xs font-bold text-navy-900 backdrop-blur-sm">
                   <Camera className="size-3.5" />
-                  {item.caption}
+                  {caption}
                 </span>
               </figcaption>
             </figure>

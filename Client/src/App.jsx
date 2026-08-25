@@ -1,4 +1,5 @@
 import { ToastProvider } from "./components/Toast";
+import { useState } from "react";
 import Navbar from "./pages/Navbar";
 import Hero from "./pages/Hero";
 import About from "./pages/About";
@@ -11,17 +12,24 @@ import CtaBanner from "./pages/CtaBanner";
 import EnquiryForm from "./pages/EnquiryForm";
 import Footer from "./pages/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import EnquiryModal from "./components/EnquiryModal";
 
 export default function App() {
+  const [isEnquiryModalOpen, setIsEnquiryModalOpen] = useState(false);
+  const openEnquiryModal = () => setIsEnquiryModalOpen(true);
+  const closeEnquiryModal = () => setIsEnquiryModalOpen(false);
+
   return (
     <ToastProvider>
       <Navbar />
+    <>
+      <Navbar onEnquiry={openEnquiryModal} />
       <main>
-        <Hero />
+        <Hero onEnquiry={openEnquiryModal} />
         <About />
-        <Services />
+        <Services onEnquiry={openEnquiryModal} />
         <Destinations />
-        <Packages />
+        <Packages onEnquiry={openEnquiryModal} />
         <WhyChooseUs />
         <Gallery />
         <CtaBanner />
@@ -30,5 +38,7 @@ export default function App() {
       <Footer />
       <ScrollToTop />
     </ToastProvider>
+      <EnquiryModal open={isEnquiryModalOpen} onClose={closeEnquiryModal} />
+    </>
   );
 }

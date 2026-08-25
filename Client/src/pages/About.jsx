@@ -2,8 +2,7 @@ import { CheckCircle2 } from "lucide-react";
 import SectionHeading from "../components/SectionHeading";
 import { about } from "../data/content";
 
-// NOTE: All copy here is PLACEHOLDER text — replace once the client provides
-// the final company description. No claims of experience, customers or awards.
+// About section — content sourced from data/content.js
 export default function About() {
   return (
     <section id="about" className="relative overflow-hidden py-20 sm:py-28">
@@ -34,7 +33,7 @@ export default function About() {
           <div className="overflow-hidden rounded-3xl shadow-2xl shadow-navy-900/15">
             <img
               src={about.images.main}
-              alt="Traveler paddling a canoe on a turquoise alpine lake (placeholder image)"
+              alt="Scenic travel destination with mountain landscape"
               className="aspect-4/3 w-full object-cover"
               loading="lazy"
             />
@@ -42,15 +41,18 @@ export default function About() {
           <div className="absolute -right-4 -bottom-10 w-40 overflow-hidden rounded-2xl border-4 border-white shadow-xl sm:-right-8 sm:w-52 animate-float">
             <img
               src={about.images.secondary}
-              alt="Road trip with a paper map (placeholder image)"
+              alt="Road trip adventure through scenic countryside"
               className="aspect-square w-full object-cover"
               loading="lazy"
             />
           </div>
-          <div className="absolute -top-6 -left-3 hidden rounded-2xl bg-leaf-600 px-5 py-4 text-white shadow-xl sm:block">
+
+          {/* NOTE: removed this cus doesn't look good but keeping in case we change our mind */}
+          {/* <div className="absolute -top-6 -left-3 hidden rounded-2xl bg-leaf-600 px-5 py-4 text-white shadow-xl sm:block">
             <p className="font-display text-2xl font-semibold">New</p>
             <p className="text-xs font-bold tracking-widest uppercase">Just launched</p>
-          </div>
+          </div> */}
+
         </div>
 
         {/* Copy */}
