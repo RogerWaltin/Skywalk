@@ -6,27 +6,6 @@ import { about } from "../data/content";
 export default function About() {
   return (
     <section id="about" className="relative overflow-hidden py-20 sm:py-28">
-      {/* faint dotted travel-path backdrop */}
-      <svg
-        className="pointer-events-none absolute -top-10 right-0 hidden opacity-[0.35] lg:block"
-        width="420"
-        height="260"
-        viewBox="0 0 420 260"
-        fill="none"
-        aria-hidden="true"
-      >
-        <path
-          d="M10 230 C 120 40, 260 240, 410 30"
-          stroke="#29792b"
-          strokeWidth="2"
-          strokeDasharray="1 10"
-          strokeLinecap="round"
-        />
-        <circle cx="10" cy="230" r="5" fill="#29792b" />
-        <circle cx="410" cy="30" r="5" fill="#102f56" />
-        <path d="M398 22l14 8-16 6z" fill="#102f56" />
-      </svg>
-
       <div className="mx-auto grid w-full max-w-7xl items-center gap-14 px-4 sm:px-6 lg:grid-cols-2 lg:gap-20 lg:px-8">
         {/* Image collage */}
         <div className="relative mx-auto w-full max-w-lg lg:max-w-none">
