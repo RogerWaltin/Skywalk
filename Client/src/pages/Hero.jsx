@@ -78,6 +78,20 @@ export default function Hero({ onEnquiry }) {
       >
         <ChevronDown className="size-7 animate-bounce" />
       </a>
+
+      {/* Irregular angled divider — white shape blends into the About section's white background */}
+      <svg
+        className="absolute inset-x-0 bottom-0 w-full"
+        viewBox="0 0 1440 120"
+        preserveAspectRatio="none"
+        aria-hidden="true"
+        height="90"
+      >
+        <polygon
+          fill="white"
+          points="0,70 480,5 1000,95 1440,25 1440,120 0,120"
+        />
+      </svg>
     </section>
   );
 }
