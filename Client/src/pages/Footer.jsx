@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <footer className="bg-navy-950 text-white/70">
       <div className="mx-auto w-full max-w-7xl px-4 pt-16 pb-8 sm:px-6 lg:px-8">
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
           {/* Brand */}
           <div>
             <div className="brightness-0 invert [&_img]:h-12 sm:[&_img]:h-14">
@@ -41,37 +41,40 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Quick links */}
-          <nav aria-label="Footer quick links">
-            <h3 className="text-sm font-bold tracking-[0.2em] text-white uppercase">Quick Links</h3>
-            <ul className="mt-5 space-y-3 text-sm">
-              {navLinks.map((link) => (
-                <li key={link.href}>
-                  <a
-                    href={link.href}
-                    className="inline-flex items-center gap-1.5 transition-colors hover:text-leaf-300"
-                  >
-                    <ArrowUpRight className="size-3.5 text-leaf-400" />
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
+          {/* Quick links + Services */}
+          <div className="grid grid-cols-2 gap-x-10">
+            {/* Quick links */}
+            <nav aria-label="Footer quick links">
+              <h3 className="text-sm font-bold tracking-[0.2em] text-white uppercase">Quick Links</h3>
+              <ul className="mt-5 space-y-3 text-sm">
+                {navLinks.map((link) => (
+                  <li key={link.href}>
+                    <a
+                      href={link.href}
+                      className="inline-flex items-center gap-1.5 transition-colors hover:text-leaf-300"
+                    >
+                      <ArrowUpRight className="size-3.5 text-leaf-400" />
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
 
-          {/* Services */}
-          <nav aria-label="Footer services links">
-            <h3 className="text-sm font-bold tracking-[0.2em] text-white uppercase">Services</h3>
-            <ul className="mt-5 grid grid-cols-1 space-y-3 text-sm sm:grid-cols-2 sm:gap-x-4 lg:grid-cols-1">
-              {services.slice(0, 6).map((service) => (
-                <li key={service.title}>
-                  <a href="#services" className="transition-colors hover:text-leaf-300">
-                    {service.title}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
+            {/* Services */}
+            <nav aria-label="Footer services links">
+              <h3 className="text-sm font-bold tracking-[0.2em] text-white uppercase">Services</h3>
+              <ul className="mt-5 space-y-3 text-sm">
+                {services.slice(0, 6).map((service) => (
+                  <li key={service.title}>
+                    <a href="#services" className="transition-colors hover:text-leaf-300">
+                      {service.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </div>
 
           {/* Contact */}
           <div>
@@ -123,9 +126,6 @@ export default function Footer() {
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-7 text-xs sm:flex-row">
           <p>
             © {year} {site.name}. All rights reserved.
-          </p>
-          <p className="text-white/40">
-            Imagery: Unsplash &amp; Pexels.
           </p>
         </div>
       </div>
