@@ -146,10 +146,15 @@ body {
   .train-slide {
     position: absolute;
     bottom: 0;
-    animation: train-slide 14s linear infinite;
+    animation: train-slide 13s linear infinite;
   }
   .train-slide-reverse {
     animation-name: train-slide-reverse;
+  }
+  @media (max-width: 1023px) {
+    .train-slide {
+      animation-duration: 5s;
+    }
   }
   @media (prefers-reduced-motion: reduce) {
     .train-slide,
@@ -168,4 +173,15 @@ body {
 @keyframes train-slide-reverse {
   from { left: 100%; }
   to { left: -100%; }
+}
+
+/* ── Mobile gallery — captions always visible ────────────────────────── */
+@media (max-width: 1023px) {
+  .gallery-item .gallery-overlay {
+    background: linear-gradient(to top, rgba(10, 32, 56, 0.55) 0%, transparent 60%);
+  }
+  .gallery-item .gallery-caption {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

@@ -22,15 +22,15 @@ export default function Destinations() {
           </a>
         </div>
 
-        <div className="mt-14 grid auto-rows-42.5 grid-cols-2 gap-4 sm:auto-rows-55 sm:gap-5 lg:auto-rows-60 lg:grid-cols-4">
+        <div className="mt-14 grid auto-rows-55 grid-cols-1 gap-4 sm:grid-cols-2 sm:auto-rows-55 sm:gap-5 lg:auto-rows-60 lg:grid-cols-4">
           {destinations.map((destination) => (
             <figure
               key={destination.name}
               className={`group relative overflow-hidden rounded-3xl ${
                 destination.feature
-                  ? "col-span-2 row-span-2"
+                  ? "sm:col-span-2 sm:row-span-2"
                   : destination.wide
-                    ? "col-span-2"
+                    ? "sm:col-span-2"
                     : ""
               }`}
             >
@@ -42,7 +42,7 @@ export default function Destinations() {
               />
               <div className="absolute inset-0 bg-linear-to-t from-navy-950/85 via-navy-950/10 to-transparent" />
               <figcaption className="absolute inset-x-0 bottom-0 p-5">
-                <p className="text-[11px] font-bold tracking-[0.18em] text-leaf-300 uppercase">
+                <p className="max-lg:mb-1 inline-block rounded-full bg-navy-950/50 px-2.5 py-0.5 text-[11px] font-bold tracking-[0.18em] text-leaf-300 uppercase">
                   {destination.tag}
                 </p>
                 <p className="mt-1 flex items-center gap-1.5 font-display text-lg font-semibold text-white sm:text-xl">

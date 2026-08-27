@@ -17,7 +17,7 @@ export default function Gallery() {
           {gallery.map(({ src, caption, position }, index) => (
             <figure
               key={src}
-              className={`group relative break-inside-avoid overflow-hidden rounded-3xl ${
+              className={`gallery-item group relative break-inside-avoid overflow-hidden rounded-3xl ${
                 index % 3 === 0 ? "aspect-3/4" : index % 3 === 1 ? "aspect-square" : "aspect-4/3"
               }`}
             >
@@ -28,8 +28,8 @@ export default function Gallery() {
                 style={position ? { objectPosition: position } : undefined}
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-navy-950/0 transition-colors duration-300 group-hover:bg-navy-950/25" />
-              <figcaption className="absolute inset-x-0 bottom-0 flex translate-y-3 items-center justify-center pb-5 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+              <div className="gallery-overlay absolute inset-0 bg-navy-950/0 transition-colors duration-300 group-hover:bg-navy-950/25" />
+              <figcaption className="gallery-caption absolute inset-x-0 bottom-0 flex translate-y-3 items-center justify-center pb-5 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
                 <span className="inline-flex items-center gap-2 rounded-full bg-white/90 px-4 py-2 text-xs font-bold text-navy-900 backdrop-blur-sm">
                   <Camera className="size-3.5" />
                   {caption}
