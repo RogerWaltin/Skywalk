@@ -1,0 +1,53 @@
+Skywalk/
+├── Client
+│   ├── dist
+│   ├── node_modules
+│   ├── public
+│   │   ├── Skywalk_Logo.png
+│   │   ├── Skywalk_LogoSquare.png
+│   │   ├── Skywalk_LogoWhiteBG.png
+│   │   ├── Tracks.png
+│   │   ├── Train.png
+│   │   ├── TrainLeft.png
+│   ├── src
+│   │   ├── components
+│   │   │   ├── EnquiryCard.jsx
+│   │   │   ├── EnquiryModal.jsx
+│   │   │   ├── Logo.jsx
+│   │   │   ├── ScrollToTop.jsx
+│   │   │   ├── SectionHeading.jsx
+│   │   │   ├── SocialIcons.jsx
+│   │   │   ├── Toast.jsx
+│   │   │   ├── ToastContext.js
+│   │   ├── data
+│   │   │   ├── content.js
+│   │   ├── pages
+│   │   │   ├── About.jsx
+│   │   │   ├── CtaBanner.jsx
+│   │   │   ├── Destinations.jsx
+│   │   │   ├── EnquiryForm.jsx
+│   │   │   ├── Footer.jsx
+│   │   │   ├── Gallery.jsx
+│   │   │   ├── Hero.jsx
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── Packages.jsx
+│   │   │   ├── Services.jsx
+│   │   │   ├── WhyChooseUs.jsx
+│   │   ├── utils
+│   │   │   ├── clipboard.js
+│   │   ├── App.jsx
+│   │   ├── index.css
+│   │   ├── main.jsx
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── README.md
+│   ├── vite.config.js
+├── Server
+│   ├── node_modules
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── server.js
+├── .gitignore
+├── folder-tree.ps1
