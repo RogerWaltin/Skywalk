@@ -5,12 +5,13 @@ const icons = { Plane, MapPinned, Stamp, Ship };
 
 export default function Hero({ onEnquiry }) {
   return (
-    <section id="home" className="relative flex min-h-svh items-center overflow-hidden">
+    <section id="home" className="relative flex sm:min-h-svh items-center overflow-hidden">
       {/* Background video with poster fallback */}
       <video
         className="absolute inset-0 h-full w-full object-cover"
         src={hero.video}
         poster={hero.poster}
+        preload="auto"
         autoPlay
         muted
         loop

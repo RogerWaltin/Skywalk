@@ -45,9 +45,8 @@ export const hero = {
     { icon: "Stamp", label: "Visa Assistance" },
     { icon: "Ship", label: "Cruise Holidays" },
   ],
-  video: "https://www.pexels.com/download/video/8345629/",
-  poster:
-    "https://images.pexels.com/photos/37310545/pexels-photo-37310545.jpeg",
+  video: "/videos/Hero.mp4",
+  poster: "/images/pexels-37310545.webp",
 };
 
 // ---------------------------------------------------------------------------
@@ -66,51 +65,37 @@ export const about = {
     "Domestic and international destinations covered",
   ],
   images: {
-    main: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=900&q=80",
-    secondary:
-      "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=700&q=80",
-    tertiary:
-      "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=500&q=80",
+    main: "/images/unsplash-1476514525535.webp",
+    secondary: "/images/unsplash-1488646953014.webp",
+    tertiary: "/images/unsplash-1436491865332.webp",
   },
 };
 
 // ---------------------------------------------------------------------------
-// IMAGES — verified Unsplash photos & Wikimedia Commons lead images
+// IMAGES — local WebP assets (800x600) served from /images
 // ---------------------------------------------------------------------------
-const img = (id, w = 800) =>
-  `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=80`;
-
-const wm = (file, w = 1200) =>
-  `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(
-    file,
-  )}?width=${w}`;
-
-const px = (id, w = 800) =>
-  `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&w=${w}`;
-
-// Verified destination imagery (subject-accurate)
 const destImages = {
-  andaman: img("photo-1723203606060-b0390c387a81", 1400), // Havelock beach, Andaman
-  charminar: wm("Charminar_Hyderabad_1.jpg"),
-  indiaGate: img("photo-1705861144478-40b4c1157a24", 1200), // India Gate, New Delhi
-  munnar: wm("Munnar_Overview.jpg"), // Munnar tea plantations
-  kumarakom: wm("Kumarkom.jpg"), // Kumarakom backwaters
-  alleppeyHouseboat: img("photo-1593417033942-bcdf26b74700", 900),
-  alleppeyBoat: img("photo-1620495824403-9a9682fb18e7", 900),
-  periyar: wm("Periyar_National_Park.JPG"), // Thekkady
-  petronas: img("photo-1787078845567-6f713c714343", 1000), // Kuala Lumpur
-  thaiLongtail: img("photo-1528181304800-259b08848526", 900), // Thailand
-  watArun: wm("Templo Wat Arun, Bangkok, Tailandia, 2013-08-22, DD 30.jpg"),
-  railay: wm("Railay_Beach_5.jpg"), // Krabi
-  halongBay: img("photo-1643029891412-92f9a81a8c16", 1000), // Vietnam
-  elNido: wm("El_Nido_Bay_December_2018.jpg"), // Philippines
-  dubai: img("photo-1512453979798-5ea266f8880c", 1000), // Burj Khalifa skyline
-  masjidHaram: wm("Edited_Great_Mosque_of_Mecca1_5-2019-ccsa4.0_(cropped).jpg"), // Umrah
-  thiruvalluvar: wm("Thiruvalluvar_Statue_at_Kanyakumari_02.jpg"), // Kanyakumari
-  ajmerDargah: wm("Dargah_of_Sufi_saint_Moinuddin_Chishti_Ajmer_India_(5).JPG"),
-  pambanBridge: wm("Pamban_Bridge_Train_Passing.jpg"), // Rameshwaram
-  tirumala: wm("Tirumala_090615.jpg"), // Tirupati
-  mookambika: wm("Kollur_Sri_Mookambika_Temple_(4465798056).jpg"), // Udupi region
+  andaman: "/images/unsplash-1723203606060.webp", // Havelock beach, Andaman
+  charminar: "/images/wiki-Charminar_Hyderabad_1.webp",
+  indiaGate: "/images/unsplash-1705861144478.webp", // India Gate, New Delhi
+  munnar: "/images/wiki-Munnar_Overview.webp", // Munnar tea plantations
+  kumarakom: "/images/wiki-Kumarkom.webp", // Kumarakom backwaters
+  alleppeyHouseboat: "/images/unsplash-1593417033942.webp",
+  alleppeyBoat: "/images/unsplash-1620495824403.webp",
+  periyar: "/images/wiki-Periyar_National_Park.webp", // Thekkady
+  petronas: "/images/unsplash-1787078845567.webp", // Kuala Lumpur
+  thaiLongtail: "/images/unsplash-1528181304800.webp", // Thailand
+  watArun: "/images/wiki-Templo_Wat_Arun_Bangkok_Tailandia_2013-08-22_DD_30.webp",
+  railay: "/images/wiki-Railay_Beach_5.webp", // Krabi
+  halongBay: "/images/unsplash-1643029891412.webp", // Vietnam
+  elNido: "/images/wiki-El_Nido_Bay_December_2018.webp", // Philippines
+  dubai: "/images/unsplash-1512453979798.webp", // Burj Khalifa skyline
+  masjidHaram: "/images/wiki-Edited_Great_Mosque_of_Mecca1_5-2019-ccsa4.0__cropped_.webp", // Umrah
+  thiruvalluvar: "/images/wiki-Thiruvalluvar_Statue_at_Kanyakumari_02.webp", // Kanyakumari
+  ajmerDargah: "/images/wiki-Dargah_of_Sufi_saint_Moinuddin_Chishti_Ajmer_India__5_.webp",
+  pambanBridge: "/images/wiki-Pamban_Bridge_Train_Passing.webp", // Rameshwaram
+  tirumala: "/images/wiki-Tirumala_090615.webp", // Tirupati
+  mookambika: "/images/wiki-Kollur_Sri_Mookambika_Temple__4465798056_.webp", // Udupi region
 };
 
 // ---------------------------------------------------------------------------
@@ -422,24 +407,22 @@ export const whyChooseUs = [
 // GALLERY
 // ---------------------------------------------------------------------------
 export const gallery = [
-  { src: img("photo-1621909321963-2276c9660298", 700), caption: "Fort Exploration" },
-  { src: px("13691355", 700), caption: "Mountain Hiking" },
-  { src: img("photo-1707893013488-51672ef83425", 700), caption: "Houseboat Cruise", position: "center 60%" },
-  { src: img("photo-1672933354004-3cbd9874f099", 700), caption: "Island Hopping" },
-  { src: px("7276634", 700), caption: "Sea Kayaking" },
-  { src: "https://images.unsplash.com/flagged/photo-1550489518-40f49ba4bf20?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", caption: "Desert Safari" },
-  { src: px("16012748", 700), caption: "Sacred Journey" },
-  { src: "https://images.unsplash.com/photo-1527705381526-469031509a9d?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", caption: "Coastal Pilgrimage" },
+  { src: "/images/unsplash-1621909321963.webp", caption: "Fort Exploration" },
+  { src: "/images/pexels-13691355.webp", caption: "Mountain Hiking" },
+  { src: "/images/unsplash-1707893013488.webp", caption: "Houseboat Cruise", position: "center 60%" },
+  { src: "/images/unsplash-1672933354004.webp", caption: "Island Hopping" },
+  { src: "/images/pexels-7276634.webp", caption: "Sea Kayaking" },
+  { src: "/images/unsplash-1550489518.webp", caption: "Desert Safari" },
+  { src: "/images/pexels-16012748.webp", caption: "Sacred Journey" },
+  { src: "/images/unsplash-1527705381526.webp", caption: "Coastal Pilgrimage" },
 ];
 
 // ---------------------------------------------------------------------------
 // CTA BANNER VIDEO
 // ---------------------------------------------------------------------------
 export const ctaBanner = {
-  video:
-    "https://videos.pexels.com/video-files/3571264/3571264-hd_1280_720_30fps.mp4",
-  poster:
-    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80",
+  video: "/videos/CTA.mp4",
+  poster: "/images/unsplash-1507525428034.webp",
   heading: "Your Next Adventure Starts With a Conversation",
   text: "Tell us where you want to go — we will plan the rest, down to the last detail.",
 };
