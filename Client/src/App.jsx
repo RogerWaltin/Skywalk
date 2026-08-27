@@ -27,10 +27,22 @@ export default function App() {
       <main>
         <Hero onEnquiry={openEnquiryModal} />
         <About />
+        <div className="relative w-full -mb-2.5 overflow-x-clip">
+          <img src="/Tracks.png" alt="" className="block w-full select-none" draggable={false} />
+          <img src="/Train.png" alt="" className="train-slide h-[150%] w-auto select-none -top-4.5" draggable={false} />
+        </div>
         <Services onEnquiry={openEnquiryModal} />
+        <div className="relative w-full -mt-1.75 overflow-x-clip">
+          <img src="/Tracks.png" alt="" className="block w-full select-none" draggable={false} />
+          <img src="/TrainLeft.png" alt="" className="train-slide train-slide-reverse h-[150%] w-auto select-none -top-4.5" draggable={false} />
+        </div>
         <Destinations />
         <Packages onEnquiry={openEnquiryModal} />
         <WhyChooseUs />
+        <div className="relative w-full -mb-2.5 overflow-x-clip">
+          <img src="/Tracks.png" alt="" className="block w-full select-none" draggable={false} />
+          <img src="/Train.png" alt="" className="train-slide h-[150%] w-auto select-none -top-4.5" draggable={false} />
+        </div>
         <Gallery />
         <CtaBanner />
         <EnquiryForm />
