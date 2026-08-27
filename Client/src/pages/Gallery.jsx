@@ -25,6 +25,7 @@ export default function Gallery() {
                 src={src}
                 alt={caption}
                 loading="lazy"
+                draggable={false}
                 style={position ? { objectPosition: position } : undefined}
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
               />

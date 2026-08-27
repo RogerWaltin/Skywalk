@@ -38,6 +38,7 @@ export default function Destinations() {
                 src={destination.image}
                 alt={`${destination.name} — ${destination.tag}`}
                 loading="lazy"
+                draggable={false}
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-linear-to-t from-navy-950/85 via-navy-950/10 to-transparent" />

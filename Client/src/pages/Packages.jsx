@@ -50,6 +50,7 @@ export default function Packages({ onEnquiry }) {
                   src={pkg.image}
                   alt={`${pkg.title} tour package`}
                   loading="lazy"
+                  draggable={false}
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <span className="absolute top-4 left-4 inline-flex items-center gap-1.5 rounded-full bg-navy-950/70 px-3 py-1 text-xs font-bold tracking-wide text-leaf-300 uppercase backdrop-blur-sm">
