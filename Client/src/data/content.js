@@ -424,7 +424,7 @@ export const whyChooseUs = [
 export const gallery = [
   { src: img("photo-1621909321963-2276c9660298", 700), caption: "Fort Exploration" },
   { src: px("13691355", 700), caption: "Mountain Hiking" },
-  { src: img("photo-1707893013488-51672ef83425", 700), caption: "Houseboat Cruise" },
+  { src: img("photo-1707893013488-51672ef83425", 700), caption: "Houseboat Cruise", position: "center 60%" },
   { src: img("photo-1672933354004-3cbd9874f099", 700), caption: "Island Hopping" },
   { src: px("7276634", 700), caption: "Sea Kayaking" },
   { src: "https://images.unsplash.com/flagged/photo-1550489518-40f49ba4bf20?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", caption: "Desert Safari" },
