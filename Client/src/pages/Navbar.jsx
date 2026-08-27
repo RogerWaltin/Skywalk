@@ -87,23 +87,42 @@ export default function Navbar({ onEnquiry }) {
           </button>
         </div>
 
-        <button
-          type="button"
-          onClick={() => setOpen((v) => !v)}
-          aria-expanded={open}
-          aria-label="Toggle menu"
-          className={`grid size-10 place-items-center rounded-xl lg:hidden ${
-            solid ? "text-navy-900 hover:bg-slate-100" : "text-white hover:bg-white/10"
-          }`}
-        >
-          {open ? <X className="size-6" /> : <Menu className="size-6" />}
-        </button>
+        {/* Mobile actions — Call and WhatsApp always visible */}
+        <div className="flex items-center gap-1 lg:hidden">
+          <a
+            href={site.phoneHref}
+            aria-label="Call Skywalk"
+            className="grid size-10 place-items-center rounded-xl transition-colors hover:bg-white/10"
+          >
+            <Phone className={`size-5 text-leaf-500`} />
+          </a>
+          <a
+            href={site.whatsappHref}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Chat on WhatsApp"
+            className="grid size-10 place-items-center rounded-xl transition-colors hover:bg-white/10"
+          >
+            <WhatsAppIcon className={`size-5 text-leaf-500`} />
+          </a>
+          <button
+            type="button"
+            onClick={() => setOpen((v) => !v)}
+            aria-expanded={open}
+            aria-label="Toggle menu"
+            className={`grid size-10 place-items-center rounded-xl ${
+              solid ? "text-navy-900 hover:bg-slate-100" : "text-white hover:bg-white/10"
+            }`}
+          >
+            {open ? <X className="size-6" /> : <Menu className="size-6" />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile menu */}
       <div
         className={`overflow-hidden border-t border-slate-100 bg-white transition-[max-height] duration-300 lg:hidden ${
-          open ? "max-h-96" : "max-h-0 border-t-0"
+          open ? "max-h-[80vh]" : "max-h-0 border-t-0"
         }`}
       >
         <nav className="space-y-1 px-4 py-4" aria-label="Mobile navigation">
@@ -117,40 +136,16 @@ export default function Navbar({ onEnquiry }) {
               {link.label}
             </a>
           ))}
-          <a>
           <button
             type="button"
             onClick={() => {
               setOpen(false);
               onEnquiry();
             }}
-            className="mt-2 block w-full rounded-xl bg-leaf-600 px-4 py-3 text-center text-base font-bold text-white"
+            className="mt-2 block w-full cursor-pointer rounded-xl bg-leaf-600 px-4 py-3 text-center text-base font-bold text-white hover:bg-leaf-700 transition-colors"
           >
             Enquire Now
           </button>
-          </a>
-          <div className="flex items-center justify-center gap-2 pt-2 pb-1">
-            <button
-              type="button"
-              onClick={() => {
-                setOpen(false);
-                handleCopyPhone();
-              }}
-              aria-label="Copy phone number to clipboard"
-              className="grid size-11 place-items-center rounded-xl transition-colors hover:bg-leaf-50"
-            >
-              <Phone className="size-5 text-leaf-500" />
-            </button>
-            <a
-              href={site.whatsappHref}
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Chat with us on WhatsApp"
-              className="grid size-11 place-items-center rounded-xl transition-colors hover:bg-leaf-50"
-            >
-              <WhatsAppIcon className="size-5 text-leaf-500" />
-            </a>
-          </div>
         </nav>
       </div>
     </header>

@@ -42,7 +42,7 @@ export default function EnquiryModal({ open, onClose }) {
 
   return (
     <div
-      className="fixed inset-0 z-70 flex items-center justify-center p-4 sm:p-6"
+      className="fixed inset-0 z-70 flex items-center justify-center p-3 sm:p-4 md:p-6"
       style={{ "--modal-duration": `${MODAL_DURATION_MS}ms` }}
     >
       {/* Backdrop */}
@@ -73,7 +73,7 @@ export default function EnquiryModal({ open, onClose }) {
           <X className="size-5" />
         </button>
 
-        <div className="max-h-[calc(100svh-3rem)] overflow-y-auto overscroll-contain rounded-4xl shadow-2xl shadow-navy-950/60">
+        <div className="max-h-[calc(100svh-2rem)] overflow-y-auto overscroll-contain rounded-3xl shadow-2xl shadow-navy-950/60 sm:rounded-4xl sm:max-h-[calc(100svh-3rem)]">
           <EnquiryCard />
         </div>
       </div>

@@ -3,13 +3,13 @@ import { Clock, Mail, MapPin, MessageSquareText, Phone, Send } from "lucide-reac
 import { enquiry, site } from "../data/content";
 
 const inputClasses =
-  "w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-navy-900 placeholder:font-normal placeholder:text-slate-400 transition-all outline-none focus:border-leaf-500 focus:ring-4 focus:ring-leaf-500/15";
+  "w-full rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm font-medium text-navy-900 placeholder:font-normal placeholder:text-slate-400 transition-all outline-none focus:border-leaf-500 focus:ring-4 focus:ring-leaf-500/15 sm:py-3";
 
 function Field({ label, children }) {
   const parts = label.split(" *");
   return (
     <label className="block">
-      <span className="mb-1.5 block text-xs font-bold tracking-wide text-navy-800 uppercase">
+      <span className="mb-2 block text-xs font-bold tracking-wide text-navy-800 uppercase sm:mb-1.5 sm:text-xs">
         {parts[0]}
         {parts.length > 1 && <span className="text-red-500"> *</span>}
       </span>
@@ -30,16 +30,16 @@ export default function EnquiryCard() {
   return (
     <div className="grid overflow-hidden rounded-4xl shadow-2xl shadow-navy-900/10 lg:grid-cols-5">
       {/* Contact info panel */}
-      <div className="relative flex flex-col bg-linear-to-b from-navy-900 to-navy-950 p-8 text-white sm:p-10 lg:col-span-2">
-        <h3 className="font-display text-2xl font-semibold">Contact Skywalk</h3>
-        <p className="mt-3 text-sm leading-relaxed text-white/60">
+      <div className="relative flex flex-col bg-linear-to-b from-navy-900 to-navy-950 p-6 text-white sm:p-8 lg:col-span-2 lg:p-10">
+        <h3 className="font-display text-xl font-semibold sm:text-2xl">Contact Skywalk</h3>
+        <p className="mt-2.5 text-sm leading-relaxed text-white/60 sm:mt-3">
           Reach out directly and our travel team will help you plan the perfect trip.
         </p>
 
-        <ul className="mt-8 space-y-6">
-          <li className="flex items-start gap-3.5">
-            <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-white/10 text-leaf-300">
-              <Phone className="size-4.5" />
+        <ul className="mt-6 space-y-5 sm:mt-8 sm:space-y-6">
+          <li className="flex items-start gap-3">
+            <span className="grid size-9 shrink-0 place-items-center rounded-xl bg-white/10 text-leaf-300 sm:size-10">
+              <Phone className="size-4 sm:size-4.5" />
             </span>
             <div>
               <p className="text-[11px] font-bold tracking-[0.18em] text-white/50 uppercase">
@@ -53,9 +53,9 @@ export default function EnquiryCard() {
               </a>
             </div>
           </li>
-          <li className="flex items-start gap-3.5">
-            <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-white/10 text-leaf-300">
-              <Mail className="size-4.5" />
+          <li className="flex items-start gap-3">
+            <span className="grid size-9 shrink-0 place-items-center rounded-xl bg-white/10 text-leaf-300 sm:size-10">
+              <Mail className="size-4 sm:size-4.5" />
             </span>
             <div>
               <p className="text-[11px] font-bold tracking-[0.18em] text-white/50 uppercase">
@@ -69,9 +69,9 @@ export default function EnquiryCard() {
               </a>
             </div>
           </li>
-          <li className="flex items-start gap-3.5">
-            <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-white/10 text-leaf-300">
-              <Clock className="size-4.5" />
+          <li className="flex items-start gap-3">
+            <span className="grid size-9 shrink-0 place-items-center rounded-xl bg-white/10 text-leaf-300 sm:size-10">
+              <Clock className="size-4 sm:size-4.5" />
             </span>
             <div>
               <p className="text-[11px] font-bold tracking-[0.18em] text-white/50 uppercase">
@@ -80,9 +80,9 @@ export default function EnquiryCard() {
               <p className="mt-1 font-semibold">Weekdays &amp; Saturdays</p>
             </div>
           </li>
-          <li className="flex items-start gap-3.5">
-            <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-white/10 text-leaf-300">
-              <MapPin className="size-4.5" />
+          <li className="flex items-start gap-3">
+            <span className="grid size-9 shrink-0 place-items-center rounded-xl bg-white/10 text-leaf-300 sm:size-10">
+              <MapPin className="size-4 sm:size-4.5" />
             </span>
             <div>
               <p className="text-[11px] font-bold tracking-[0.18em] text-white/50 uppercase">
@@ -103,12 +103,12 @@ export default function EnquiryCard() {
         </ul>
 
         <div className="mt-auto hidden pt-10 lg:block">
-          <p className="font-display text-lg text-white/80 italic">“{site.tagline}”</p>
+          <p className="font-display text-lg text-white/80 italic">"{site.tagline}"</p>
         </div>
       </div>
 
       {/* Form panel */}
-      <div className="bg-white p-8 sm:p-10 lg:col-span-3">
+      <div className="bg-white p-6 sm:p-8 lg:col-span-3 lg:p-10">
         {sent ? (
           <div className="grid h-full min-h-80 place-items-center text-center">
             <div>
@@ -132,7 +132,7 @@ export default function EnquiryCard() {
             </div>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="grid gap-5 sm:grid-cols-2">
+          <form onSubmit={handleSubmit} className="grid gap-6 sm:grid-cols-2 sm:gap-5">
             <Field label="Full Name *">
               <input required type="text" name="name" placeholder="e.g. Priya Nair" className={inputClasses} autoComplete="off"/>
             </Field>
@@ -182,13 +182,13 @@ export default function EnquiryCard() {
                 />
               </Field>
             </div>
-            <div className="flex flex-wrap items-center justify-between gap-4 sm:col-span-2">
+            <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between sm:gap-4 sm:col-span-2">
               <p className="max-w-sm text-xs leading-relaxed text-slate-400">
                 By submitting, you agree to be contacted about your travel enquiry.
               </p>
               <button
                 type="submit"
-                className="cursor-pointer group inline-flex items-center gap-2 rounded-full bg-leaf-600 px-8 py-3.5 text-sm font-bold text-white shadow-lg shadow-leaf-600/30 transition-all hover:-translate-y-0.5 hover:bg-leaf-700"
+                className="cursor-pointer group inline-flex w-full items-center justify-center gap-2 rounded-full bg-leaf-600 px-8 py-4 text-sm font-bold text-white shadow-lg shadow-leaf-600/30 transition-all hover:-translate-y-0.5 hover:bg-leaf-700 sm:w-auto"
               >
                 Send Enquiry
                 <Send className="size-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-0.5" />
