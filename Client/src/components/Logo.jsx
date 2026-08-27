@@ -16,6 +16,7 @@ export default function Logo({ boxed = false }) {
         alt={site.name}
         width={1654}
         height={525}
+        draggable={false}
         className="h-9 w-auto sm:h-10"
       />
     </a>

@@ -15,6 +15,7 @@ export default function About() {
               alt="Scenic travel destination with mountain landscape"
               className="aspect-4/3 w-full object-cover"
               loading="lazy"
+              draggable={false}
             />
           </div>
           <div className="absolute -right-4 -bottom-10 w-40 overflow-hidden rounded-2xl border-4 border-white shadow-xl sm:-right-8 sm:w-52 animate-float">
@@ -23,6 +24,7 @@ export default function About() {
               alt="Road trip adventure through scenic countryside"
               className="aspect-square w-full object-cover"
               loading="lazy"
+              draggable={false}
             />
           </div>
 
