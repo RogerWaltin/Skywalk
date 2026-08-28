@@ -16,7 +16,7 @@ export default function Footer() {
               <Logo />
             </div>
             <p className="mt-1 max-w-xs text-sm leading-relaxed">
-              {site.tagline} Flights, tours, visas and complete travel support,
+              {site.tagline}. Flights, tours, visas and complete travel support,
               all in one place.
             </p>
             <div className="mt-6 flex gap-3">
