@@ -80,16 +80,23 @@ export default function Footer() {
           <div>
             <h3 className="text-sm font-bold tracking-[0.2em] text-white uppercase">Contact</h3>
             <ul className="mt-5 space-y-4 text-sm">
-              <li>
-                <a
-                  href={site.phoneHref}
-                  className="flex items-center gap-3 transition-colors hover:text-leaf-300"
-                >
-                  <span className="grid size-9 shrink-0 place-items-center rounded-lg bg-white/10 text-leaf-300">
-                    <Phone className="size-4" />
-                  </span>
-                  <span className="whitespace-nowrap">{site.phone}</span>
-                </a>
+              <li className="flex items-center gap-3">
+                <span className="grid size-9 shrink-0 place-items-center rounded-lg bg-white/10 text-leaf-300">
+                  <Phone className="size-4" />
+                </span>
+                <div className="flex flex-wrap items-center gap-x-1.5">
+                  {site.phones.map((p, i) => (
+                    <div key={p.href} className="flex items-center gap-x-1.5">
+                      {i > 0 && <span className="text-white/40">{"\u00b7"}</span>}
+                      <a
+                        href={p.href}
+                        className="whitespace-nowrap transition-colors hover:text-leaf-300"
+                      >
+                        {p.display}
+                      </a>
+                    </div>
+                  ))}
+                </div>
               </li>
               <li>
                 <a

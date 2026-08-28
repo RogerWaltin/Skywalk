@@ -8,6 +8,11 @@ export const site = {
   name: "Skywalk Tours & Travels",
   shortName: "Skywalk",
   tagline: "Together, we journey ahead",
+  phones: [
+    { display: "+91 79940 15501", href: "tel:+917994015501" },
+    { display: "+91 81369 55502", href: "tel:+918136955502" },
+    { display: "+91 80753 44886", href: "tel:+918075344886" },
+  ],
   phone: "+91 79940 15501",
   phoneCopy: "+91 7994015501",
   phoneHref: "tel:+917994015501",
@@ -15,7 +20,7 @@ export const site = {
   email: "skywalktravels92@gmail.com",
   emailHref: "mailto:skywalktravels92@gmail.com",
   instagram: "https://www.instagram.com/skywalk_travels",
-  address: "Room No. 876, 3rd Floor, Penta Plaza, North Paravur, Kerala 683513",
+  address: "Room No. 876, 3rd Floor, Penta Plaza, North Paravur, Ernakulam, Kerala 683513",
   mapsHref: "https://maps.app.goo.gl/K4trFHpKBTdUnVu4A",
 };
 
