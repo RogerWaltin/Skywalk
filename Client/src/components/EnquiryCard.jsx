@@ -193,12 +193,19 @@ export default function EnquiryCard() {
               <p className="text-[11px] font-bold tracking-[0.18em] text-white/50 uppercase">
                 Phone
               </p>
-              <a
-                href={site.phoneHref}
-                className="mt-1 block text-sm font-semibold whitespace-nowrap hover:text-leaf-300"
-              >
-                {site.phone}
-              </a>
+              <div className="mt-1 flex flex-wrap items-center gap-x-1.5 border-l-2 border-white/10 pl-3">
+                {site.phones.map((p, i) => (
+                  <div key={p.href} className="flex items-center gap-x-1.5">
+                    {i > 0 && <span className="text-sm text-white/40">{"\u00b7"}</span>}
+                    <a
+                      href={p.href}
+                      className="text-sm font-semibold whitespace-nowrap transition-colors hover:text-leaf-300"
+                    >
+                      {p.display}
+                    </a>
+                  </div>
+                ))}
+              </div>
             </div>
           </li>
           <li className="flex items-start gap-3">
@@ -225,7 +232,7 @@ export default function EnquiryCard() {
               <p className="text-[11px] font-bold tracking-[0.18em] text-white/50 uppercase">
                 Office Hours
               </p>
-              <p className="mt-1 font-semibold">Weekdays &amp; Saturdays</p>
+              <p className="mt-1 font-semibold">9:30 AM to 6PM (Monday to Saturday)</p>
             </div>
           </li>
           <li className="flex items-start gap-3">
