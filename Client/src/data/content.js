@@ -7,7 +7,7 @@
 export const site = {
   name: "Skywalk Tours & Travels",
   shortName: "Skywalk",
-  tagline: "Together, we journey ahead",
+  tagline: "Your Journey Begins Here",
   phones: [
     { display: "+91 79940 15501", href: "tel:+917994015501" },
     { display: "+91 81369 55502", href: "tel:+918136955502" },
