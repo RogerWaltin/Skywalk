@@ -7,7 +7,7 @@ import { enquiryRateLimiter } from "./middleware/rateLimiter.js";
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-const allowedOrigins = (process.env.CORS_ORIGIN || "http://localhost:5173")
+const allowedOrigins = (process.env.CORS_ORIGIN || "")
   .split(",")
   .map((origin) => origin.trim())
   .filter(Boolean);
@@ -34,6 +34,6 @@ app.get("/", (req, res) => {
 
 app.post("/api/enquiry", enquiryRateLimiter, enquiryController);
 
-app.listen(PORT, () => {
-  console.log(`Express server listening on http://localhost:${PORT}`);
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Server running on port ${PORT}`);
 });
