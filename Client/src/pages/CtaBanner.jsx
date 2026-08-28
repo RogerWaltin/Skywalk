@@ -5,7 +5,7 @@ export default function CtaBanner() {
   return (
     <section className="relative overflow-hidden">
       <video
-        className="absolute inset-0 h-full w-full object-cover"
+        className="absolute inset-0 h-full w-full object-cover pointer-events-none"
         src={ctaBanner.video}
         poster={ctaBanner.poster}
         autoPlay
@@ -13,6 +13,7 @@ export default function CtaBanner() {
         loop
         playsInline
         aria-hidden="true"
+        onContextMenu={(e) => e.preventDefault()}
       />
       <div className="absolute inset-0 bg-navy-950/75" />
 

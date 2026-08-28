@@ -8,7 +8,7 @@ export default function Hero({ onEnquiry }) {
     <section id="home" className="relative flex sm:min-h-svh items-center overflow-hidden">
       {/* Background video with poster fallback */}
       <video
-        className="absolute inset-0 h-full w-full object-cover"
+        className="absolute inset-0 h-full w-full object-cover pointer-events-none"
         src={hero.video}
         poster={hero.poster}
         preload="auto"
@@ -18,6 +18,7 @@ export default function Hero({ onEnquiry }) {
         playsInline
         disablePictureInPicture
         aria-hidden="true"
+        onContextMenu={(e) => e.preventDefault()}
       />
       {/* Light at the top so the navbar logo sits on the sky; navy scrim below for text */}
       {/* <div className="absolute inset-0 bg-linear-to-b from-navy-950/0 via-navy-950/75 via-30% to-navy-950/90" /> */}
