@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { ArrowRight, Clock, MapPin, Sparkles } from "lucide-react";
 import SectionHeading from "../components/SectionHeading";
+import ItineraryModal from "../components/ItineraryModal";
 import { packageCategories, packages } from "../data/content";
 
-// Package cards driven by data/content.js — categories: Domestic,
-// International, Religious. Pricing shown on request.
 export default function Packages({ onEnquiry }) {
   const [active, setActive] = useState(packageCategories[0]);
+  const [selectedPkg, setSelectedPkg] = useState(null);
   const visible = packages.filter((pkg) => pkg.category === active);
 
   return (
@@ -53,9 +53,14 @@ export default function Packages({ onEnquiry }) {
                   draggable={false}
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
+                {/* Category badge — top-left */}
                 <span className="absolute top-4 left-4 inline-flex items-center gap-1.5 rounded-full bg-navy-950/70 px-3 py-1 text-xs font-bold tracking-wide text-leaf-300 uppercase backdrop-blur-sm">
                   <Sparkles className="size-3.5" />
                   {pkg.category}
+                </span>
+                {/* Price badge — top-right */}
+                <span className="absolute top-4 right-4 inline-flex items-center rounded-full bg-navy-950/70 px-3 py-1 text-xs font-bold tracking-wide text-white/80 backdrop-blur-sm">
+                  Price on request
                 </span>
               </div>
               <div className="flex flex-1 flex-col p-6">
@@ -66,7 +71,14 @@ export default function Packages({ onEnquiry }) {
                 <h3 className="mt-2.5 font-display text-xl font-semibold text-white">{pkg.title}</h3>
                 <p className="mt-2 flex-1 text-sm leading-relaxed text-white/60">{pkg.blurb}</p>
                 <div className="mt-5 flex items-center justify-between border-t border-white/10 pt-4">
-                  <span className="text-sm font-bold text-leaf-300">Price on request</span>
+                  <button
+                    type="button"
+                    onClick={() => setSelectedPkg(pkg)}
+                    className="inline-flex cursor-pointer items-center gap-1.5 text-sm font-bold text-leaf-400 transition-colors hover:text-leaf-300"
+                  >
+                    View Details
+                    <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
+                  </button>
                   <button
                     type="button"
                     onClick={onEnquiry}
@@ -86,6 +98,12 @@ export default function Packages({ onEnquiry }) {
           Looking for a custom itinerary? We build trips around your dates, budget and interests.
         </p>
       </div>
+
+      <ItineraryModal
+        open={selectedPkg !== null}
+        onClose={() => setSelectedPkg(null)}
+        pkg={selectedPkg}
+      />
     </section>
   );
 }

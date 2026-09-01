@@ -247,6 +247,67 @@ export const packages = [
     image: destImages.andaman,
     blurb:
       "Cruise the islands from Port Blair — Cellular Jail history, coral beaches and Ross Island.",
+    itinerary: [
+      {
+        day: 1,
+        title: "Arrival in Port Blair",
+        activities: [
+          "Airport pickup and hotel check-in",
+          "Visit Cellular Jail",
+          "Evening at Corbyn's Cove Beach",
+        ],
+      },
+      {
+        day: 2,
+        title: "Ross Island & North Bay",
+        activities: [
+          "Boat trip to Ross Island",
+          "Visit North Bay Island",
+          "Snorkeling / water activities (subject to availability)",
+          "Return to Port Blair",
+        ],
+      },
+      {
+        day: 3,
+        title: "Port Blair → Havelock",
+        activities: [
+          "Check-out",
+          "Take a ferry to Havelock Island",
+          "Hotel check-in",
+          "Relax at the beach",
+          "Sunset at Radhanagar Beach",
+          "Overnight stay in Havelock",
+        ],
+      },
+      {
+        day: 4,
+        title: "Havelock Island",
+        activities: [
+          "Explore Havelock Island",
+          "Optional snorkeling / water activities",
+          "Free time to relax",
+        ],
+      },
+      {
+        day: 5,
+        title: "Havelock → Port Blair",
+        activities: [
+          "Check-out",
+          "Take a ferry back to Port Blair",
+          "Free time for shopping / local exploration",
+          "Overnight stay in Port Blair",
+        ],
+      },
+      {
+        day: 6,
+        title: "Departure",
+        activities: [
+          "Check-out",
+          "Airport transfer",
+          "Departure",
+        ],
+      },
+    ],
   },
   {
     category: "Domestic",
@@ -255,6 +316,42 @@ export const packages = [
     image: destImages.charminar,
     blurb:
       "Charminar, Golconda Fort, Salar Jung Museum and the city's famous biryani.",
+    itinerary: [
+      {
+        day: 1,
+        title: "Arrival & Old Hyderabad",
+        activities: [
+          "Airport / railway station pickup",
+          "Hotel check-in",
+          "Visit Charminar",
+          "Explore the surrounding Old City and local markets",
+          "Visit Mecca Masjid",
+          "Evening free for local shopping and exploration",
+        ],
+      },
+      {
+        day: 2,
+        title: "Forts, Palaces & Culture",
+        activities: [
+          "Visit Golconda Fort",
+          "Explore the historic fort and surrounding area",
+          "Visit Qutb Shahi Tombs",
+          "Visit Salar Jung Museum",
+          "Evening free for shopping or leisure",
+        ],
+      },
+      {
+        day: 3,
+        title: "Local Exploration & Departure",
+        activities: [
+          "Visit Hussain Sagar Lake and Buddha Statue",
+          "Free time for shopping and local exploration",
+          "Check-out from hotel",
+          "Transfer to airport / railway station",
+          "Departure",
+        ],
+      },
+    ],
   },
   {
     category: "Domestic",
@@ -263,6 +360,52 @@ export const packages = [
     image: destImages.indiaGate,
     blurb:
       "India Gate, Red Fort, Qutub Minar and the bustling bazaars of Old Delhi.",
+    itinerary: [
+      {
+        day: 1,
+        title: "Arrival & Old Delhi",
+        activities: [
+          "Airport / railway station pickup",
+          "Hotel check-in",
+          "Visit India Gate",
+          "Visit Rashtrapati Bhavan and Parliament area",
+          "Evening visit to Connaught Place",
+        ],
+      },
+      {
+        day: 2,
+        title: "Old Delhi & Historic Sites",
+        activities: [
+          "Visit Red Fort",
+          "Visit Jama Masjid",
+          "Explore the streets and markets of Old Delhi",
+          "Enjoy local Delhi cuisine",
+          "Visit Raj Ghat",
+          "Evening free for shopping and leisure",
+        ],
+      },
+      {
+        day: 3,
+        title: "Culture & Heritage",
+        activities: [
+          "Visit Qutub Minar",
+          "Visit Humayun's Tomb",
+          "Visit Lotus Temple",
+          "Explore local markets",
+          "Evening free for shopping or leisure",
+        ],
+      },
+      {
+        day: 4,
+        title: "Local Exploration & Departure",
+        activities: [
+          "Free time for shopping and local exploration",
+          "Check-out from hotel",
+          "Transfer to airport / railway station",
+          "Departure",
+        ],
+      },
+    ],
   },
   {
     category: "Domestic",
@@ -271,6 +414,56 @@ export const packages = [
     image: destImages.munnar,
     blurb:
       "Tea-garden hills of Munnar plus Periyar Lake wildlife boating in Thekkady.",
+    itinerary: [
+      {
+        day: 1,
+        title: "Arrival & Munnar",
+        activities: [
+          "Pickup from airport / railway station",
+          "Proceed to Munnar",
+          "Scenic drive through the Western Ghats",
+          "Visit tea gardens and viewpoints along the way",
+          "Hotel check-in",
+          "Evening free to relax and explore Munnar",
+        ],
+      },
+      {
+        day: 2,
+        title: "Munnar Sightseeing",
+        activities: [
+          "Visit Mattupetty Dam",
+          "Explore Echo Point",
+          "Explore the tea plantations",
+          "Visit Tea Museum",
+          "Free time for shopping and local exploration",
+        ],
+      },
+      {
+        day: 3,
+        title: "Munnar → Thekkady",
+        activities: [
+          "Check-out from the hotel",
+          "Proceed to Thekkady",
+          "Scenic drive through the hills and forests",
+          "Hotel check-in",
+          "Visit a local spice plantation",
+          "Optional boating experience on Periyar Lake",
+          "Evening free for leisure",
+          "Overnight stay in Thekkady",
+        ],
+      },
+      {
+        day: 4,
+        title: "Thekkady & Departure",
+        activities: [
+          "Morning nature / wildlife experience",
+          "Free time for local shopping",
+          "Check-out from the hotel",
+          "Transfer to airport / railway station",
+          "Departure",
+        ],
+      },
+    ],
   },
   {
     category: "Domestic",
@@ -279,6 +472,44 @@ export const packages = [
     image: destImages.alleppeyBoat,
     blurb:
       "Houseboat nights on Vembanad Lake, palm-fringed canals and village life.",
+    itinerary: [
+      {
+        day: 1,
+        title: "Arrival & Kumarakom",
+        activities: [
+          "Pickup from airport / railway station",
+          "Proceed to Kumarakom",
+          "Hotel / resort check-in",
+          "Explore the scenic backwaters",
+          "Visit Kumarakom Bird Sanctuary",
+          "Evening free to relax by the backwaters",
+        ],
+      },
+      {
+        day: 2,
+        title: "Kumarakom → Alleppey",
+        activities: [
+          "Check-out from the hotel",
+          "Proceed to Alleppey",
+          "Check-in to houseboat",
+          "Cruise through the backwaters",
+          "Experience village life, canals and paddy fields",
+          "Evening sunset cruise",
+          "Overnight stay on the houseboat",
+        ],
+      },
+      {
+        day: 3,
+        title: "Backwaters & Departure",
+        activities: [
+          "Morning backwater cruise",
+          "Check-out from the houseboat",
+          "Free time for local exploration / shopping",
+          "Transfer to airport / railway station",
+          "Departure",
+        ],
+      },
+    ],
   },
   // --- International ---
   {
@@ -288,6 +519,57 @@ export const packages = [
     image: destImages.petronas,
     blurb:
       "Kuala Lumpur's Petronas Towers, Batu Caves and a Genting Highlands escape.",
+    itinerary: [
+      {
+        day: 1,
+        title: "Arrival in Kuala Lumpur",
+        activities: [
+          "Arrive in Kuala Lumpur and meet the tour representative",
+          "Check in to the hotel and relax after your journey",
+          "Evening at leisure to explore the city or rest",
+        ],
+      },
+      {
+        day: 2,
+        title: "Kuala Lumpur City Tour",
+        activities: [
+          "Explore the highlights of Kuala Lumpur",
+          "Visit the Petronas Twin Towers",
+          "See Merdeka Square and other notable city landmarks",
+          "Explore Chinatown and Central Market",
+          "Evening at leisure",
+        ],
+      },
+      {
+        day: 3,
+        title: "Batu Caves & Genting Highlands",
+        activities: [
+          "Visit the famous Batu Caves",
+          "Continue to Genting Highlands and enjoy the scenic mountain surroundings",
+          "Explore the main attractions and entertainment areas",
+          "Return to Kuala Lumpur in the evening",
+        ],
+      },
+      {
+        day: 4,
+        title: "Kuala Lumpur Leisure & Shopping",
+        activities: [
+          "Enjoy a relaxed day exploring Kuala Lumpur at your own pace",
+          "Visit popular shopping areas and local attractions",
+          "Free time for shopping, sightseeing, or exploring the city",
+        ],
+      },
+      {
+        day: 5,
+        title: "Departure",
+        activities: [
+          "Check out from the hotel",
+          "Enjoy some free time before your departure",
+          "Head to the airport for your onward journey",
+          "Tour concludes",
+        ],
+      },
+    ],
   },
   {
     category: "International",
@@ -296,6 +578,59 @@ export const packages = [
     image: destImages.thaiLongtail,
     blurb:
       "Bangkok's grand temples, floating markets and easy-going beach days.",
+    itinerary: [
+      {
+        day: 1,
+        title: "Arrival in Bangkok",
+        activities: [
+          "Arrive in Bangkok and meet the tour representative",
+          "Check in to the hotel and relax after your journey",
+          "Evening at leisure to explore the city",
+        ],
+      },
+      {
+        day: 2,
+        title: "Bangkok City Tour",
+        activities: [
+          "Explore the highlights of Bangkok",
+          "Visit some of the city's famous temples and landmarks",
+          "Explore the Grand Palace and surrounding areas",
+          "Visit a local market or riverside area",
+          "Evening at leisure",
+        ],
+      },
+      {
+        day: 3,
+        title: "Floating Market & City Exploration",
+        activities: [
+          "Visit one of Bangkok's famous floating markets",
+          "Experience the local markets and surrounding areas",
+          "Return to the city and enjoy some free time",
+          "Explore Bangkok's shopping and entertainment areas",
+        ],
+      },
+      {
+        day: 4,
+        title: "Bangkok to Pattaya",
+        activities: [
+          "Check out and travel to Pattaya",
+          "Enjoy the scenic journey along the coast",
+          "Explore Pattaya and its popular attractions",
+          "Relax by the beach and enjoy the evening at leisure",
+          "Overnight stay in Pattaya",
+        ],
+      },
+      {
+        day: 5,
+        title: "Departure",
+        activities: [
+          "Check out from the hotel",
+          "Enjoy some free time before departure",
+          "Head to the airport for your onward journey",
+          "Tour concludes",
+        ],
+      },
+    ],
   },
   {
     category: "International",
@@ -304,6 +639,59 @@ export const packages = [
     image: destImages.railay,
     blurb:
       "Limestone karsts, island-hopping to Phi Phi and Railay's famous beaches.",
+    itinerary: [
+      {
+        day: 1,
+        title: "Arrival in Phuket",
+        activities: [
+          "Arrive in Phuket and meet the tour representative",
+          "Check in to the hotel and relax",
+          "Spend the evening exploring the nearby area or enjoying the beach",
+        ],
+      },
+      {
+        day: 2,
+        title: "Phuket Sightseeing",
+        activities: [
+          "Explore the highlights of Phuket",
+          "Visit popular viewpoints and local landmarks",
+          "Explore the Old Town and surrounding areas",
+          "Enjoy some free time by the beach",
+        ],
+      },
+      {
+        day: 3,
+        title: "Phi Phi Island Tour",
+        activities: [
+          "Enjoy a day trip to the famous Phi Phi Islands",
+          "Explore the islands, beaches, and surrounding waters",
+          "Stop at scenic locations for swimming and sightseeing",
+          "Return to Phuket in the evening",
+        ],
+      },
+      {
+        day: 4,
+        title: "Phuket to Krabi",
+        activities: [
+          "Check out and travel to Krabi",
+          "Enjoy the scenic journey along the coast",
+          "Explore Krabi's famous limestone landscapes",
+          "Visit Railay Beach and enjoy the surrounding scenery",
+          "Evening at leisure",
+          "Overnight stay in Krabi",
+        ],
+      },
+      {
+        day: 5,
+        title: "Departure",
+        activities: [
+          "Check out from the hotel",
+          "Enjoy some free time before departure",
+          "Head to the airport for your onward journey",
+          "Tour concludes",
+        ],
+      },
+    ],
   },
   {
     category: "International",
@@ -312,6 +700,68 @@ export const packages = [
     image: destImages.halongBay,
     blurb:
       "Overnight Ha Long Bay cruise, Hanoi's old quarter and Ho Chi Minh City.",
+    itinerary: [
+      {
+        day: 1,
+        title: "Arrival in Hanoi",
+        activities: [
+          "Arrive in Hanoi and meet the tour representative",
+          "Check in to the hotel and relax",
+          "Evening at leisure to explore the city",
+        ],
+      },
+      {
+        day: 2,
+        title: "Hanoi City Tour",
+        activities: [
+          "Explore the highlights of Hanoi",
+          "Visit Hoan Kiem Lake and the Old Quarter",
+          "Explore important cultural and historical landmarks",
+          "Enjoy some free time to experience the city",
+        ],
+      },
+      {
+        day: 3,
+        title: "Hanoi to Ha Long Bay",
+        activities: [
+          "Travel to Ha Long Bay",
+          "Board the cruise and settle in",
+          "Enjoy the scenic limestone islands and surrounding waters",
+          "Relax and enjoy the cruise experience",
+          "Overnight stay on the Ha Long Bay cruise",
+        ],
+      },
+      {
+        day: 4,
+        title: "Ha Long Bay to Hanoi",
+        activities: [
+          "Continue exploring Ha Long Bay in the morning",
+          "Disembark from the cruise and return to Hanoi",
+          "Evening at leisure",
+        ],
+      },
+      {
+        day: 5,
+        title: "Hanoi to Ho Chi Minh City",
+        activities: [
+          "Check out and continue to Ho Chi Minh City",
+          "Explore some of the city's main landmarks",
+          "Visit local markets and surrounding areas",
+          "Evening at leisure",
+          "Overnight stay in Ho Chi Minh City",
+        ],
+      },
+      {
+        day: 6,
+        title: "Departure",
+        activities: [
+          "Check out from the hotel",
+          "Enjoy some free time before departure",
+          "Head to the airport for your onward journey",
+          "Tour concludes",
+        ],
+      },
+    ],
   },
   {
     category: "International",
@@ -320,6 +770,68 @@ export const packages = [
     image: destImages.elNido,
     blurb:
       "El Nido's lagoons, Puerto Princesa's underground river and island beaches.",
+    itinerary: [
+      {
+        day: 1,
+        title: "Arrival in Puerto Princesa",
+        activities: [
+          "Arrive in Puerto Princesa and meet the tour representative",
+          "Check in to the hotel and relax",
+          "Explore the surrounding area at leisure",
+        ],
+      },
+      {
+        day: 2,
+        title: "Underground River",
+        activities: [
+          "Visit the Puerto Princesa Underground River",
+          "Explore the surrounding natural landscapes",
+          "Return to Puerto Princesa",
+          "Evening at leisure",
+        ],
+      },
+      {
+        day: 3,
+        title: "Puerto Princesa to El Nido",
+        activities: [
+          "Check out and travel to El Nido",
+          "Enjoy the scenic journey through Palawan",
+          "Check in to the hotel and relax",
+          "Evening free to explore El Nido",
+          "Overnight stay in El Nido",
+        ],
+      },
+      {
+        day: 4,
+        title: "El Nido Island Tour",
+        activities: [
+          "Enjoy a day exploring the famous islands and lagoons of El Nido",
+          "Visit scenic lagoons, beaches, and surrounding islands",
+          "Enjoy time for swimming and sightseeing",
+          "Return to El Nido in the evening",
+        ],
+      },
+      {
+        day: 5,
+        title: "El Nido Leisure",
+        activities: [
+          "Enjoy a relaxed day in El Nido",
+          "Explore the beaches and nearby areas",
+          "Free time for optional activities or island experiences",
+          "Evening at leisure",
+        ],
+      },
+      {
+        day: 6,
+        title: "Departure",
+        activities: [
+          "Check out from the hotel",
+          "Enjoy some free time before departure",
+          "Head to the airport for your onward journey",
+          "Tour concludes",
+        ],
+      },
+    ],
   },
   {
     category: "International",
@@ -328,6 +840,60 @@ export const packages = [
     image: destImages.dubai,
     blurb:
       "Burj Khalifa views, desert safari, Sheikh Zayed Grand Mosque and more.",
+    itinerary: [
+      {
+        day: 1,
+        title: "Arrival in Dubai",
+        activities: [
+          "Arrive in Dubai and meet the tour representative",
+          "Check in to the hotel and relax",
+          "Evening at leisure to explore the surrounding area",
+        ],
+      },
+      {
+        day: 2,
+        title: "Dubai City Tour",
+        activities: [
+          "Explore the highlights of Dubai",
+          "Visit the Burj Khalifa and enjoy views of the city",
+          "Explore Dubai Marina and Jumeirah",
+          "Visit the Dubai Mall and surrounding attractions",
+          "Evening at leisure",
+        ],
+      },
+      {
+        day: 3,
+        title: "Desert Safari",
+        activities: [
+          "Enjoy a relaxed morning in Dubai",
+          "Spend some time exploring the city or shopping",
+          "Experience an evening desert safari",
+          "Enjoy the desert landscapes and traditional activities",
+          "Return to the hotel",
+        ],
+      },
+      {
+        day: 4,
+        title: "Abu Dhabi City Tour",
+        activities: [
+          "Travel to Abu Dhabi",
+          "Visit the Sheikh Zayed Grand Mosque",
+          "Explore the city's major landmarks and waterfront",
+          "Enjoy some free time to explore Abu Dhabi",
+          "Return to Dubai",
+        ],
+      },
+      {
+        day: 5,
+        title: "Departure",
+        activities: [
+          "Check out from the hotel",
+          "Enjoy some free time before departure",
+          "Head to the airport for your onward journey",
+          "Tour concludes",
+        ],
+      },
+    ],
   },
   // --- Religious ---
   {
@@ -337,6 +903,154 @@ export const packages = [
     image: destImages.masjidHaram,
     blurb:
       "Makkah and Madinah ziyarats with complete visa, stay and transport assistance.",
+    itinerary: [
+      {
+        day: 1,
+        title: "Arrival in Saudi Arabia & Makkah",
+        activities: [
+          "Arrival at the airport",
+          "Meet and assistance",
+          "Proceed to Makkah",
+          "Hotel check-in",
+          "Settle in and rest",
+          "Overnight stay in Makkah",
+        ],
+      },
+      {
+        day: 2,
+        title: "Umrah",
+        activities: [
+          "Umrah arrangements and guidance",
+          "Perform Umrah",
+          "Return to the hotel",
+          "Rest and personal time",
+          "Overnight stay in Makkah",
+        ],
+      },
+      {
+        day: 3,
+        title: "Makkah",
+        activities: [
+          "Free time in Makkah",
+          "Visit the surrounding areas at leisure",
+          "Opportunity for personal religious activities",
+          "Overnight stay in Makkah",
+        ],
+      },
+      {
+        day: 4,
+        title: "Makkah Ziyarat",
+        activities: [
+          "Visit important Islamic sites around Makkah",
+          "Visit locations associated with the history of Umrah and the Seerah",
+          "Return to the hotel",
+          "Free time",
+          "Overnight stay in Makkah",
+        ],
+      },
+      {
+        day: 5,
+        title: "Makkah",
+        activities: [
+          "Free day in Makkah",
+          "Personal time for worship and relaxation",
+          "Explore the area around Masjid al-Haram at leisure",
+          "Overnight stay in Makkah",
+        ],
+      },
+      {
+        day: 6,
+        title: "Makkah",
+        activities: [
+          "Free time for personal activities",
+          "Optional local visits depending on the package arrangements",
+          "Rest and relaxation",
+          "Overnight stay in Makkah",
+        ],
+      },
+      {
+        day: 7,
+        title: "Makkah",
+        activities: [
+          "Final day in Makkah",
+          "Free time for personal activities and religious observance",
+          "Prepare for the journey to Madinah",
+          "Overnight stay in Makkah",
+        ],
+      },
+      {
+        day: 8,
+        title: "Makkah to Madinah",
+        activities: [
+          "Check-out from the hotel in Makkah",
+          "Travel to Madinah",
+          "Hotel check-in",
+          "Settle in and explore the surrounding area",
+          "Overnight stay in Madinah",
+        ],
+      },
+      {
+        day: 9,
+        title: "Madinah",
+        activities: [
+          "Visit Masjid an-Nabawi",
+          "Explore the surrounding area",
+          "Free time for personal activities",
+          "Overnight stay in Madinah",
+        ],
+      },
+      {
+        day: 10,
+        title: "Madinah Ziyarat",
+        activities: [
+          "Visit important Islamic sites around Madinah",
+          "Visit the Uhud area and other significant locations",
+          "Return to the hotel",
+          "Free time",
+          "Overnight stay in Madinah",
+        ],
+      },
+      {
+        day: 11,
+        title: "Madinah",
+        activities: [
+          "Visit important historical and religious sites in Madinah",
+          "Free time to explore the city",
+          "Return to the hotel",
+          "Overnight stay in Madinah",
+        ],
+      },
+      {
+        day: 12,
+        title: "Madinah",
+        activities: [
+          "Free day in Madinah",
+          "Personal time for worship, reflection and relaxation",
+          "Explore the local area at leisure",
+          "Overnight stay in Madinah",
+        ],
+      },
+      {
+        day: 13,
+        title: "Madinah",
+        activities: [
+          "Final day in Madinah",
+          "Free time for personal activities",
+          "Prepare for departure",
+          "Overnight stay in Madinah",
+        ],
+      },
+      {
+        day: 14,
+        title: "Departure",
+        activities: [
+          "Check-out from the hotel",
+          "Transfer to the airport",
+          "Departure for the return journey",
+          "Tour ends",
+        ],
+      },
+    ],
   },
   {
     category: "Religious",
@@ -345,6 +1059,55 @@ export const packages = [
     image: destImages.thiruvalluvar,
     blurb:
       "Nagore Dargah blessings and the Vivekananda Rock Memorial at Kanyakumari.",
+    itinerary: [
+      {
+        day: 1,
+        title: "Arrival & Nagur",
+        activities: [
+          "Arrival and pickup",
+          "Proceed to Nagur",
+          "Visit Nagore Dargah",
+          "Explore the surrounding area",
+          "Check into the hotel",
+          "Evening free to relax",
+        ],
+      },
+      {
+        day: 2,
+        title: "Nagur & Local Sightseeing",
+        activities: [
+          "Visit important local landmarks and places of interest",
+          "Explore Nagur and nearby coastal areas",
+          "Free time for personal visits and local exploration",
+          "Return to the hotel",
+        ],
+      },
+      {
+        day: 3,
+        title: "Nagur to Kanyakumari",
+        activities: [
+          "Check out and proceed to Kanyakumari",
+          "Scenic journey towards the southern coast",
+          "Visit Vivekananda Rock Memorial",
+          "Visit Thiruvalluvar Statue viewpoint",
+          "Explore Kanyakumari beach and surrounding areas",
+          "Check into the hotel",
+          "Evening free to relax and explore",
+          "Overnight stay in Kanyakumari",
+        ],
+      },
+      {
+        day: 4,
+        title: "Kanyakumari & Departure",
+        activities: [
+          "Morning sightseeing around Kanyakumari",
+          "Visit important local landmarks",
+          "Check out",
+          "Proceed for departure",
+          "Tour ends",
+        ],
+      },
+    ],
   },
   {
     category: "Religious",
@@ -353,6 +1116,53 @@ export const packages = [
     image: destImages.ajmerDargah,
     blurb:
       "Ajmer Sharif Dargah darshan with a Pushkar Brahma temple visit.",
+    itinerary: [
+      {
+        day: 1,
+        title: "Arrival & Ajmer",
+        activities: [
+          "Arrival and pickup",
+          "Proceed to Ajmer",
+          "Visit Ajmer Sharif Dargah",
+          "Explore the surrounding area",
+          "Check into the hotel",
+          "Evening free to relax",
+        ],
+      },
+      {
+        day: 2,
+        title: "Ajmer Sightseeing",
+        activities: [
+          "Visit important religious and historical landmarks",
+          "Explore the old city and local surroundings",
+          "Visit Ana Sagar Lake",
+          "Free time for local exploration",
+          "Return to the hotel",
+        ],
+      },
+      {
+        day: 3,
+        title: "Pushkar Excursion",
+        activities: [
+          "Proceed to Pushkar",
+          "Visit Brahma Temple",
+          "Explore Pushkar Lake and the surrounding ghats",
+          "Visit the local market and nearby landmarks",
+          "Return to Ajmer",
+          "Evening free to relax",
+        ],
+      },
+      {
+        day: 4,
+        title: "Ajmer & Departure",
+        activities: [
+          "Morning free for personal visits or local exploration",
+          "Check out",
+          "Proceed for departure",
+          "Tour ends",
+        ],
+      },
+    ],
   },
   {
     category: "Religious",
@@ -361,6 +1171,45 @@ export const packages = [
     image: destImages.pambanBridge,
     blurb:
       "Ramanathaswamy Temple, the iconic Pamban Bridge and Meenakshi Amman Temple.",
+    itinerary: [
+      {
+        day: 1,
+        title: "Arrival & Rameshwaram",
+        activities: [
+          "Arrival and pickup",
+          "Proceed to Rameshwaram",
+          "Visit Ramanathaswamy Temple",
+          "Visit Agni Theertham and nearby sacred sites",
+          "Check into the hotel",
+          "Evening free to relax or explore the surrounding area",
+        ],
+      },
+      {
+        day: 2,
+        title: "Rameshwaram Sightseeing & Madurai",
+        activities: [
+          "Morning visit to the remaining important sights around Rameshwaram",
+          "Visit Pamban Bridge and enjoy the coastal views",
+          "Proceed to Madurai",
+          "Visit Meenakshi Amman Temple",
+          "Explore the local area and nearby markets",
+          "Check into the hotel",
+          "Evening free to relax",
+          "Overnight stay in Madurai",
+        ],
+      },
+      {
+        day: 3,
+        title: "Madurai & Departure",
+        activities: [
+          "Morning sightseeing around Madurai",
+          "Visit Thirumalai Nayakkar Palace and other nearby landmarks",
+          "Free time for local shopping or exploring",
+          "Proceed for departure",
+          "Tour ends",
+        ],
+      },
+    ],
   },
   {
     category: "Religious",
@@ -369,6 +1218,31 @@ export const packages = [
     image: destImages.tirumala,
     blurb:
       "Sri Venkateswara Swamy darshan at Tirumala, planned end to end for you.",
+    itinerary: [
+      {
+        day: 1,
+        title: "Arrival & Tirupati",
+        activities: [
+          "Arrival and pickup",
+          "Proceed to Tirupati",
+          "Check into the hotel",
+          "Visit nearby temples and important local attractions",
+          "Spend the evening exploring the surrounding area or relaxing at the hotel",
+        ],
+      },
+      {
+        day: 2,
+        title: "Tirumala & Departure",
+        activities: [
+          "Proceed to Tirumala for Sri Venkateswara Swamy darshan",
+          "Visit the important temple areas and nearby viewpoints",
+          "Return to Tirupati",
+          "Free time for local shopping or relaxation",
+          "Proceed for departure",
+          "Tour ends",
+        ],
+      },
+    ],
   },
   {
     category: "Religious",
@@ -377,6 +1251,52 @@ export const packages = [
     image: destImages.mookambika,
     blurb:
       "Kollur Mookambika darshan, Udupi Sri Krishna Matha and Malpe beach.",
+    itinerary: [
+      {
+        day: 1,
+        title: "Arrival & Mookambika",
+        activities: [
+          "Arrival and pickup",
+          "Proceed to Kollur Mookambika",
+          "Check into the hotel",
+          "Visit Kollur Mookambika Temple",
+          "Spend the evening exploring the temple surroundings or relaxing",
+        ],
+      },
+      {
+        day: 2,
+        title: "Mookambika & Coastal Journey",
+        activities: [
+          "Morning temple visit or free time for darshan",
+          "Proceed towards Udupi",
+          "Enjoy the scenic journey along the coastal route",
+          "Visit nearby attractions along the way",
+          "Check into the hotel in Udupi",
+          "Evening free to relax and explore the local area",
+        ],
+      },
+      {
+        day: 3,
+        title: "Udupi Sightseeing",
+        activities: [
+          "Visit Sri Krishna Matha and important nearby temples",
+          "Explore Udupi town and its local attractions",
+          "Visit Malpe Beach",
+          "Free time to enjoy the beach and surrounding area",
+          "Return to the hotel",
+        ],
+      },
+      {
+        day: 4,
+        title: "Udupi & Departure",
+        activities: [
+          "Morning free for relaxation or local exploration",
+          "Visit any remaining nearby attractions",
+          "Proceed for departure",
+          "Tour ends",
+        ],
+      },
+    ],
   },
 ];
 
